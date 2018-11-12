@@ -39,7 +39,7 @@ namespace DataAnalysisSoftware
                 MessageBox.Show(ex.Message);
             }
         }
-        StreamReader files = new StreamReader("");
+        //StreamReader files = new StreamReader("test.text");
       //  string[] columnNames = File.ReadLines
         public void LoadData()
         {
@@ -47,6 +47,24 @@ namespace DataAnalysisSoftware
             foreach (DataGridViewRow row in dgvDataInfo.Rows)
             {
 
+            }
+        }
+        /// <summary>
+        /// This method process the data in the file
+        /// </summary>
+        /// <param name="filePath"></param>
+        public void ProcessFile(String filePath)
+        {
+            string oneLine;
+            int lineNo;
+            try
+            {
+                string fileContent = File.ReadAllText(filePath);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
         }
     }
