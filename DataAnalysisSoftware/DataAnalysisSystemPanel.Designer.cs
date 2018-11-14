@@ -40,7 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnLoadData = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnChart = new System.Windows.Forms.Button();
             this.btnDataSummary = new System.Windows.Forms.Button();
@@ -175,7 +175,7 @@
             // 
             this.pnlMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMenu.Controls.Add(this.btnLoadData);
-            this.pnlMenu.Controls.Add(this.button2);
+            this.pnlMenu.Controls.Add(this.btnExit);
             this.pnlMenu.Controls.Add(this.button3);
             this.pnlMenu.Controls.Add(this.btnChart);
             this.pnlMenu.Controls.Add(this.btnDataSummary);
@@ -197,16 +197,17 @@
             this.btnLoadData.UseVisualStyleBackColor = true;
             this.btnLoadData.Click += new System.EventHandler(this.btnLoadData_Click);
             // 
-            // button2
+            // btnExit
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(3, 294);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(191, 36);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "About ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(3, 294);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(191, 36);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Exit Application";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // button3
             // 
@@ -229,6 +230,7 @@
             this.btnChart.TabIndex = 0;
             this.btnChart.Text = "View Chart";
             this.btnChart.UseVisualStyleBackColor = true;
+            this.btnChart.Click += new System.EventHandler(this.btnChart_Click);
             // 
             // btnDataSummary
             // 
@@ -250,7 +252,7 @@
             this.pnlContent.Location = new System.Drawing.Point(199, 89);
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(904, 494);
-            this.pnlContent.TabIndex = 3;
+            this.pnlContent.TabIndex = 0;
             // 
             // DataAnalysisSystemPanel
             // 
@@ -263,9 +265,11 @@
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DataAnalysisSystemPanel";
             this.Text = "MainForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DataAnalysisSystemPanel_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
@@ -284,7 +288,7 @@
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Panel pnlFooter;
         private System.Windows.Forms.Panel pnlMenu;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnChart;
         private System.Windows.Forms.Button btnDataSummary;

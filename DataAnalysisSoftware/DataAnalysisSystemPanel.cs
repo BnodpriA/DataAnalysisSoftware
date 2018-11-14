@@ -31,6 +31,21 @@ namespace DataAnalysisSoftware
             OpenFileDialog opd = new OpenFileDialog();
             opd.Title = "Open .HRM file";
             opd.Filter = "HRM files (*.hrm|*.hrm|All files (*.*)|*.*";
+            if (opd.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
+
+        private void btnChart_Click(object sender, EventArgs e)
+        {
+            ChartMode chartMode = new ChartMode();
+            
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
