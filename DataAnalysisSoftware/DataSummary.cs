@@ -34,5 +34,12 @@ namespace DataAnalysisSoftware
                 i.ToString();
             }
         }
+        /// <summary>
+        /// Display Date in Understandable formate i.e. 20130205 to 2013/02/05 (YYYY/MM/DD) Format
+        /// </summary>
+        private void ManageDateFormate()
+        {
+
+        }
     }
 }
