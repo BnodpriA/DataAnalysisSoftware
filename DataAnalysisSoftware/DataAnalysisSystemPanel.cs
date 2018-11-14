@@ -21,5 +21,16 @@ namespace DataAnalysisSoftware
         {
 
         }
+        /// <summary>
+        /// /Open Dialog to search hrm file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnLoadData_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opd = new OpenFileDialog();
+            opd.Title = "Open .HRM file";
+            opd.Filter = "HRM files (*.hrm|*.hrm|All files (*.*)|*.*";
+        }
     }
 }
