@@ -16,7 +16,7 @@ namespace DataAnalysisSoftware
         /// </summary>
         /// <param name="monitor"></param>
         /// <returns></returns>
-        private static string GetPolarDeviceName(int monitor)
+        public static string GetPolarDeviceName(int monitor)
         {
             string deviceName = null;
             switch (monitor)
@@ -140,6 +140,20 @@ namespace DataAnalysisSoftware
                     break;
             }
             return deviceName;
+        }
+        /// <summary>
+        /// Get [Params] from hrm file
+        /// </summary>
+        public void GetGeneralParameters()
+        {
+
+        }
+        /// <summary>
+        /// Get [HRData] from hrm file
+        /// </summary>
+        public void GetHRMData()
+        {
+
         }
     }
 }
