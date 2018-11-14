@@ -242,6 +242,7 @@
             this.btnDataSummary.TabIndex = 0;
             this.btnDataSummary.Text = "Data Summary";
             this.btnDataSummary.UseVisualStyleBackColor = true;
+            this.btnDataSummary.Click += new System.EventHandler(this.btnDataSummary_Click);
             // 
             // pnlContent
             // 

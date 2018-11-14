@@ -45,7 +45,7 @@ namespace DataAnalysisSoftware
         {
             try
             {
-                pnlContent.Controls.Clear();
+                pnlContent.Controls.Clear(); //Clear Existing controls
                 ChartMode chart = new ChartMode();
                 chart.TopLevel = false;
                 pnlContent.Controls.Add(chart);
@@ -64,6 +64,26 @@ namespace DataAnalysisSoftware
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        /// <summary>
+        /// Add Data Summary in Content Panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnDataSummary_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                pnlContent.Controls.Clear();
+                DataSummary summary = new DataSummary();
+                summary.TopLevel = false;
+                pnlContent.Controls.Add(summary);
+            }
+            catch ( Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
