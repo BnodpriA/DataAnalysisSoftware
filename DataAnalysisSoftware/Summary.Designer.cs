@@ -1,6 +1,6 @@
 ﻿namespace DataAnalysisSoftware
 {
-    partial class Form1
+    partial class Summary
     {
         /// <summary>
         /// Required designer variable.
