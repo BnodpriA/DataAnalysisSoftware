@@ -64,7 +64,7 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1103, 95);
+            this.pnlHeader.Size = new System.Drawing.Size(1103, 89);
             this.pnlHeader.TabIndex = 0;
             // 
             // pnlFooter
@@ -74,9 +74,9 @@
             this.pnlFooter.Controls.Add(this.lklFacebook);
             this.pnlFooter.Controls.Add(this.label1);
             this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFooter.Location = new System.Drawing.Point(0, 619);
+            this.pnlFooter.Location = new System.Drawing.Point(0, 583);
             this.pnlFooter.Name = "pnlFooter";
-            this.pnlFooter.Size = new System.Drawing.Size(1103, 88);
+            this.pnlFooter.Size = new System.Drawing.Size(1103, 82);
             this.pnlFooter.TabIndex = 1;
             // 
             // pnlMenu
@@ -88,15 +88,16 @@
             this.pnlMenu.Controls.Add(this.btnChart);
             this.pnlMenu.Controls.Add(this.btnDataSummary);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMenu.Location = new System.Drawing.Point(0, 95);
+            this.pnlMenu.Location = new System.Drawing.Point(0, 89);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(199, 524);
+            this.pnlMenu.Size = new System.Drawing.Size(199, 494);
             this.pnlMenu.TabIndex = 2;
             // 
             // btnDataSummary
             // 
+            this.btnDataSummary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDataSummary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataSummary.Location = new System.Drawing.Point(3, 124);
+            this.btnDataSummary.Location = new System.Drawing.Point(3, 177);
             this.btnDataSummary.Name = "btnDataSummary";
             this.btnDataSummary.Size = new System.Drawing.Size(191, 36);
             this.btnDataSummary.TabIndex = 0;
@@ -105,8 +106,9 @@
             // 
             // btnChart
             // 
+            this.btnChart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnChart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChart.Location = new System.Drawing.Point(3, 163);
+            this.btnChart.Location = new System.Drawing.Point(3, 216);
             this.btnChart.Name = "btnChart";
             this.btnChart.Size = new System.Drawing.Size(191, 36);
             this.btnChart.TabIndex = 0;
@@ -115,8 +117,9 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(3, 241);
+            this.button2.Location = new System.Drawing.Point(3, 294);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(191, 36);
             this.button2.TabIndex = 1;
@@ -125,8 +128,9 @@
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(3, 202);
+            this.button3.Location = new System.Drawing.Point(3, 255);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(191, 36);
             this.button3.TabIndex = 2;
@@ -135,8 +139,9 @@
             // 
             // btnLoadData
             // 
+            this.btnLoadData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLoadData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoadData.Location = new System.Drawing.Point(3, 85);
+            this.btnLoadData.Location = new System.Drawing.Point(3, 138);
             this.btnLoadData.Name = "btnLoadData";
             this.btnLoadData.Size = new System.Drawing.Size(191, 36);
             this.btnLoadData.TabIndex = 4;
@@ -145,9 +150,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(398, 6);
+            this.label1.Location = new System.Drawing.Point(398, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(324, 22);
             this.label1.TabIndex = 0;
@@ -155,10 +161,11 @@
             // 
             // lklFacebook
             // 
+            this.lklFacebook.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lklFacebook.AutoSize = true;
             this.lklFacebook.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lklFacebook.LinkColor = System.Drawing.Color.Blue;
-            this.lklFacebook.Location = new System.Drawing.Point(401, 35);
+            this.lklFacebook.Location = new System.Drawing.Point(401, 33);
             this.lklFacebook.Name = "lklFacebook";
             this.lklFacebook.Size = new System.Drawing.Size(319, 19);
             this.lklFacebook.TabIndex = 0;
@@ -167,10 +174,11 @@
             // 
             // linkLabel1
             // 
+            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel1.Location = new System.Drawing.Point(384, 61);
+            this.linkLabel1.Location = new System.Drawing.Point(384, 59);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(353, 19);
             this.linkLabel1.TabIndex = 0;
@@ -179,9 +187,10 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(319, 15);
+            this.label2.Location = new System.Drawing.Point(319, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(427, 26);
             this.label2.TabIndex = 0;
@@ -189,9 +198,10 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(384, 55);
+            this.label3.Location = new System.Drawing.Point(384, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 19);
             this.label3.TabIndex = 2;
@@ -203,15 +213,16 @@
             this.pnlContent.BackgroundImage = global::DataAnalysisSoftware.Properties.Resources._130;
             this.pnlContent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(199, 95);
+            this.pnlContent.Location = new System.Drawing.Point(199, 89);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(904, 524);
+            this.pnlContent.Size = new System.Drawing.Size(904, 494);
             this.pnlContent.TabIndex = 3;
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox3.Image = global::DataAnalysisSoftware.Properties.Resources.tbc_logo;
-            this.pictureBox3.Location = new System.Drawing.Point(796, 1);
+            this.pictureBox3.Location = new System.Drawing.Point(796, -2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(161, 88);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -220,8 +231,9 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox2.Image = global::DataAnalysisSoftware.Properties.Resources.leedsbeckett;
-            this.pictureBox2.Location = new System.Drawing.Point(961, 1);
+            this.pictureBox2.Location = new System.Drawing.Point(961, -2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(138, 88);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,10 +242,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.Image = global::DataAnalysisSoftware.Properties.Resources.polar_hrm;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(218, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(218, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -243,7 +256,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1103, 707);
+            this.ClientSize = new System.Drawing.Size(1103, 665);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlFooter);
