@@ -36,10 +36,28 @@ namespace DataAnalysisSoftware
 
             }
         }
-
+        /// <summary>
+        /// Add Chart Mode in the Content Panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnChart_Click(object sender, EventArgs e)
         {
-            ChartMode chartMode = new ChartMode();
+            try
+            {
+                pnlContent.Controls.Clear();
+                ChartMode chart = new ChartMode();
+                chart.TopLevel = false;
+                pnlContent.Controls.Add(chart);
+                chart.FormBorderStyle = FormBorderStyle.None;
+                chart.Dock = DockStyle.Fill;
+                chart.Show();
+            }
+            catch ( Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
             
         }
 

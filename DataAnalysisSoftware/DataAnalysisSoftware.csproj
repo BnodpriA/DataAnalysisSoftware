@@ -61,6 +61,12 @@
     <Compile Include="DataAnalysisSystemPanel.Designer.cs">
       <DependentUpon>DataAnalysisSystemPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSummary.Designer.cs">
+      <DependentUpon>DataSummary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Summary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataAnalysisSystemPanel.resx">
       <DependentUpon>DataAnalysisSystemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataSummary.resx">
+      <DependentUpon>DataSummary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Summary.resx">
       <DependentUpon>Summary.cs</DependentUpon>

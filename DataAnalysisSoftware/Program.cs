@@ -16,7 +16,7 @@ namespace DataAnalysisSoftware
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChartMode());
+            Application.Run(new DataSummary());
         }
     }
 }
