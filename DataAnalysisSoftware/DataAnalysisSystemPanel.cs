@@ -78,6 +78,8 @@ namespace DataAnalysisSoftware
                 DataSummary summary = new DataSummary();
                 summary.TopLevel = false;
                 pnlContent.Controls.Add(summary);
+                summary.Dock = DockStyle.Fill;
+                summary.Show();
             }
             catch ( Exception ex)
             {

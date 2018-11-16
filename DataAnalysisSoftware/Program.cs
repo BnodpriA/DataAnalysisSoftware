@@ -16,7 +16,7 @@ namespace DataAnalysisSoftware
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DataSummary());
+            Application.Run(new DataAnalysisSystemPanel());
         }
     }
 }
