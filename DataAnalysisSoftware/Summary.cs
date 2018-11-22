@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
@@ -30,11 +31,18 @@ namespace DataAnalysisSoftware
                 DialogResult dr = openFileDialog1.ShowDialog();
                 if (dr == DialogResult.OK)
                 {
-                    filePath = openFileDialog1.FileName;
-                    if (File.Exists(filePath))
-                        ProcessFile(filePath);
-                    else
-                        MessageBox.Show("Error, no file selected");
+                //    filePath = openFileDialog1.FileName;
+                //    if (File.Exists(filePath))
+                //        ProcessFile(filePath);
+                //    else
+                //        MessageBox.Show("Error, no file selected");
+                }
+                StreamReader reader = new StreamReader(openFileDialog1.FileName, Encoding.Default);
+                string hrmFile = null;
+                int NumberOfLines = File.ReadAllLines(openFileDialog1.FileName).Length;
+                while ((hrmFile = reader.ReadLine()) != null)
+                {
+
                 }
             }
             catch (Exception ex)

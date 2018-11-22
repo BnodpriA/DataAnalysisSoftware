@@ -45,6 +45,7 @@
             this.btnChart = new System.Windows.Forms.Button();
             this.btnDataSummary = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.txtFileName = new System.Windows.Forms.TextBox();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -174,6 +175,7 @@
             // pnlMenu
             // 
             this.pnlMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMenu.Controls.Add(this.txtFileName);
             this.pnlMenu.Controls.Add(this.btnLoadData);
             this.pnlMenu.Controls.Add(this.btnExit);
             this.pnlMenu.Controls.Add(this.button3);
@@ -189,7 +191,7 @@
             // 
             this.btnLoadData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLoadData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoadData.Location = new System.Drawing.Point(3, 138);
+            this.btnLoadData.Location = new System.Drawing.Point(3, 134);
             this.btnLoadData.Name = "btnLoadData";
             this.btnLoadData.Size = new System.Drawing.Size(191, 36);
             this.btnLoadData.TabIndex = 4;
@@ -213,7 +215,7 @@
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(3, 255);
+            this.button3.Location = new System.Drawing.Point(3, 254);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(191, 36);
             this.button3.TabIndex = 2;
@@ -224,7 +226,7 @@
             // 
             this.btnChart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnChart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChart.Location = new System.Drawing.Point(3, 216);
+            this.btnChart.Location = new System.Drawing.Point(3, 214);
             this.btnChart.Name = "btnChart";
             this.btnChart.Size = new System.Drawing.Size(191, 36);
             this.btnChart.TabIndex = 0;
@@ -236,7 +238,7 @@
             // 
             this.btnDataSummary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDataSummary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataSummary.Location = new System.Drawing.Point(3, 177);
+            this.btnDataSummary.Location = new System.Drawing.Point(3, 174);
             this.btnDataSummary.Name = "btnDataSummary";
             this.btnDataSummary.Size = new System.Drawing.Size(191, 36);
             this.btnDataSummary.TabIndex = 0;
@@ -254,6 +256,13 @@
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(904, 494);
             this.pnlContent.TabIndex = 0;
+            // 
+            // txtFileName
+            // 
+            this.txtFileName.Location = new System.Drawing.Point(3, 104);
+            this.txtFileName.Name = "txtFileName";
+            this.txtFileName.Size = new System.Drawing.Size(191, 26);
+            this.txtFileName.TabIndex = 0;
             // 
             // DataAnalysisSystemPanel
             // 
@@ -280,6 +289,7 @@
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooter.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
+            this.pnlMenu.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -303,5 +313,6 @@
         private System.Windows.Forms.Panel pnlContent;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox txtFileName;
     }
 }

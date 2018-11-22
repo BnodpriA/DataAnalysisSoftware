@@ -18,7 +18,27 @@ namespace DataAnalysisSoftware
         {
             InitializeComponent();
         }
-
+        public string fileName;
+        public string deviceName;
+        public string version;
+        public string sMode;
+        public string date;
+        public string startTime;
+        public string length;
+        public string interval;
+        public string upper1;
+        public string upper2;
+        public string upper3;
+        public string lower1;
+        public string lower2;
+        public string lower3;
+        public string timer1;
+        public string timer2;
+        public string timer3;
+        public string activeLimit;
+        public string maxHR;
+        public string restHR;
+        public string startDelay;
         private void DataSummary_Load(object sender, EventArgs e)
         {
             cmbSpeedUnit.SelectedIndex = 0; //Set the initial unit of the speed

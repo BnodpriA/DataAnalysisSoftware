@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.label34 = new System.Windows.Forms.Label();
             this.pnlDataSummary = new System.Windows.Forms.Panel();
             this.gbDataSummary = new System.Windows.Forms.GroupBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -61,6 +62,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gbParameterInfo = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.lblMonitorType = new System.Windows.Forms.Label();
             this.dgvHRMData = new System.Windows.Forms.DataGridView();
             this.SNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,17 +80,6 @@
             this.Altitude = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeartRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Power = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlDataSummary.SuspendLayout();
             this.gbDataSummary.SuspendLayout();
@@ -96,6 +96,16 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1162, 61);
             this.pnlHeader.TabIndex = 0;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(437, 21);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(259, 22);
+            this.label34.TabIndex = 1;
+            this.label34.Text = "POLAR HRM DATA SUMMARY";
             // 
             // pnlDataSummary
             // 
@@ -416,86 +426,50 @@
             this.gbParameterInfo.TabStop = false;
             this.gbParameterInfo.Text = "GENERAL PARAMETERS";
             // 
-            // lblMonitorType
+            // label29
             // 
-            this.lblMonitorType.AutoSize = true;
-            this.lblMonitorType.Location = new System.Drawing.Point(73, 22);
-            this.lblMonitorType.Name = "lblMonitorType";
-            this.lblMonitorType.Size = new System.Drawing.Size(224, 19);
-            this.lblMonitorType.TabIndex = 0;
-            this.lblMonitorType.Text = "HEART RATE MONITOR TYPE";
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(210, 172);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(64, 19);
+            this.label29.TabIndex = 6;
+            this.label29.Text = "Weight:";
             // 
-            // dgvHRMData
+            // label30
             // 
-            this.dgvHRMData.AllowUserToAddRows = false;
-            this.dgvHRMData.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvHRMData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvHRMData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvHRMData.BackgroundColor = System.Drawing.Color.White;
-            this.dgvHRMData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHRMData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SNo,
-            this.Speed,
-            this.Cadence,
-            this.Altitude,
-            this.HeartRate,
-            this.Power});
-            this.dgvHRMData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHRMData.Location = new System.Drawing.Point(0, 61);
-            this.dgvHRMData.Name = "dgvHRMData";
-            this.dgvHRMData.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHRMData.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvHRMData.RowHeadersVisible = false;
-            this.dgvHRMData.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvHRMData.Size = new System.Drawing.Size(746, 430);
-            this.dgvHRMData.TabIndex = 2;
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(210, 142);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(73, 19);
+            this.label30.TabIndex = 7;
+            this.label30.Text = "VO2max:";
             // 
-            // SNo
+            // label31
             // 
-            this.SNo.FillWeight = 30F;
-            this.SNo.HeaderText = "S.N.";
-            this.SNo.Name = "SNo";
-            this.SNo.ReadOnly = true;
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(210, 112);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(72, 19);
+            this.label31.TabIndex = 8;
+            this.label31.Text = "Rest HR:";
             // 
-            // Speed
+            // label32
             // 
-            this.Speed.FillWeight = 60F;
-            this.Speed.HeaderText = "Speed";
-            this.Speed.Name = "Speed";
-            this.Speed.ReadOnly = true;
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(210, 82);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(71, 19);
+            this.label32.TabIndex = 9;
+            this.label32.Text = "Max HR:";
             // 
-            // Cadence
+            // label33
             // 
-            this.Cadence.HeaderText = "Cadence (rpm)";
-            this.Cadence.Name = "Cadence";
-            this.Cadence.ReadOnly = true;
-            // 
-            // Altitude
-            // 
-            this.Altitude.HeaderText = "Altitude (m/ft)";
-            this.Altitude.Name = "Altitude";
-            this.Altitude.ReadOnly = true;
-            // 
-            // HeartRate
-            // 
-            this.HeartRate.HeaderText = "Heart Rate (bpm)";
-            this.HeartRate.Name = "HeartRate";
-            this.HeartRate.ReadOnly = true;
-            // 
-            // Power
-            // 
-            this.Power.FillWeight = 90F;
-            this.Power.HeaderText = "Power (watt)";
-            this.Power.Name = "Power";
-            this.Power.ReadOnly = true;
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(210, 52);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(64, 19);
+            this.label33.TabIndex = 10;
+            this.label33.Text = "Length:";
             // 
             // label24
             // 
@@ -542,60 +516,86 @@
             this.label28.TabIndex = 5;
             this.label28.Text = "Device Version:";
             // 
-            // label29
+            // lblMonitorType
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(210, 172);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(64, 19);
-            this.label29.TabIndex = 6;
-            this.label29.Text = "Weight:";
+            this.lblMonitorType.AutoSize = true;
+            this.lblMonitorType.Location = new System.Drawing.Point(73, 22);
+            this.lblMonitorType.Name = "lblMonitorType";
+            this.lblMonitorType.Size = new System.Drawing.Size(224, 19);
+            this.lblMonitorType.TabIndex = 0;
+            this.lblMonitorType.Text = "HEART RATE MONITOR TYPE";
             // 
-            // label30
+            // dgvHRMData
             // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(210, 142);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(73, 19);
-            this.label30.TabIndex = 7;
-            this.label30.Text = "VO2max:";
+            this.dgvHRMData.AllowUserToAddRows = false;
+            this.dgvHRMData.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvHRMData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvHRMData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvHRMData.BackgroundColor = System.Drawing.Color.White;
+            this.dgvHRMData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHRMData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SNo,
+            this.Speed,
+            this.Cadence,
+            this.Altitude,
+            this.HeartRate,
+            this.Power});
+            this.dgvHRMData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvHRMData.Location = new System.Drawing.Point(0, 61);
+            this.dgvHRMData.Name = "dgvHRMData";
+            this.dgvHRMData.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHRMData.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvHRMData.RowHeadersVisible = false;
+            this.dgvHRMData.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvHRMData.Size = new System.Drawing.Size(746, 430);
+            this.dgvHRMData.TabIndex = 2;
             // 
-            // label31
+            // SNo
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(210, 112);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(72, 19);
-            this.label31.TabIndex = 8;
-            this.label31.Text = "Rest HR:";
+            this.SNo.FillWeight = 30F;
+            this.SNo.HeaderText = "S.N.";
+            this.SNo.Name = "SNo";
+            this.SNo.ReadOnly = true;
             // 
-            // label32
+            // Speed
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(210, 82);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(71, 19);
-            this.label32.TabIndex = 9;
-            this.label32.Text = "Max HR:";
+            this.Speed.FillWeight = 60F;
+            this.Speed.HeaderText = "Speed";
+            this.Speed.Name = "Speed";
+            this.Speed.ReadOnly = true;
             // 
-            // label33
+            // Cadence
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(210, 52);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(64, 19);
-            this.label33.TabIndex = 10;
-            this.label33.Text = "Length:";
+            this.Cadence.HeaderText = "Cadence (rpm)";
+            this.Cadence.Name = "Cadence";
+            this.Cadence.ReadOnly = true;
             // 
-            // label34
+            // Altitude
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Cambria", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(437, 21);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(259, 22);
-            this.label34.TabIndex = 1;
-            this.label34.Text = "POLAR HRM DATA SUMMARY";
+            this.Altitude.HeaderText = "Altitude (m/ft)";
+            this.Altitude.Name = "Altitude";
+            this.Altitude.ReadOnly = true;
+            // 
+            // HeartRate
+            // 
+            this.HeartRate.HeaderText = "Heart Rate (bpm)";
+            this.HeartRate.Name = "HeartRate";
+            this.HeartRate.ReadOnly = true;
+            // 
+            // Power
+            // 
+            this.Power.FillWeight = 90F;
+            this.Power.HeaderText = "Power (watt)";
+            this.Power.Name = "Power";
+            this.Power.ReadOnly = true;
             // 
             // DataSummary
             // 

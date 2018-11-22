@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DataAnalysisSoftware
 {
+/// <summary>
+/// ParameterClass created to fetch [Params]
+/// </summary>
     public class ParameterClass
     {
         public string Version { get; set; }
@@ -23,7 +26,7 @@ namespace DataAnalysisSoftware
         public string Lower3 { get; set; }
         public string Timer1 { get; set; }
         public string Timer2 { get; set; }
-        public string Timerr3 { get; set; }
+        public string Timer3 { get; set; }
         public string ActiveLimit { get; set; }
         public string MaxHR { get; set; }
         public string RestHR { get; set; }

@@ -16,10 +16,38 @@ namespace DataAnalysisSoftware
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Setting Initial Params values
+        /// </summary>
+        string version = "Initial Version";
+        string monitor = "Initial Monitor";
+        string sMode = "Initial SMode";
+        string date = "Initial Date";
+        string startTime = "Initial Start Time";
+        string length = "Initial Length";
+        string interval = "Initial Interval";
+        string upper1 = "Initial Upper1";
+        string lower1 = "Initial Lower1";
+        string upper2 = "Initial Upper2";
+        string lower2 = "Initial Lower2";
+        string upper3 = "Initial Upper3";
+        string lower3 = "Initial Lower3";
+        string timer1 = "Initial Timer1";
+        string timer2 = "Initial Timer2";
+        string timer3 = "Initial Timer3";
+        string activeLimit = "Initial Active Limit";
+        string maxHR = "Initial MaxHR";
+        string restHR = "Initial RestHR";
+        string startDelay = "Initial Start Delay";
+        string vo2Max = "Initial VO2Max";
+        string weight = "Initial Weight";
 
+        ParameterClass pc = new ParameterClass();
+        
         private void DataAnalysisSystemPanel_Load(object sender, EventArgs e)
         {
-
+            pc.Version = version;
+            
         }
         /// <summary>
         /// /Open Dialog to search hrm file
@@ -78,6 +106,7 @@ namespace DataAnalysisSoftware
                 DataSummary summary = new DataSummary();
                 summary.TopLevel = false;
                 pnlContent.Controls.Add(summary);
+                summary.FormBorderStyle = FormBorderStyle.None;
                 summary.Dock = DockStyle.Fill;
                 summary.Show();
             }
