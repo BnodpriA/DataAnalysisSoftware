@@ -80,6 +80,16 @@
             this.Altitude = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeartRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Power = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblDeviceVersion = new System.Windows.Forms.Label();
+            this.lblSMode = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblStartTime = new System.Windows.Forms.Label();
+            this.lblInterval = new System.Windows.Forms.Label();
+            this.lblLength = new System.Windows.Forms.Label();
+            this.lblMaxHR = new System.Windows.Forms.Label();
+            this.lblRestHR = new System.Windows.Forms.Label();
+            this.lblVO2max = new System.Windows.Forms.Label();
+            this.lblWeight = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlDataSummary.SuspendLayout();
             this.gbDataSummary.SuspendLayout();
@@ -200,6 +210,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(357, 184);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(18, 19);
@@ -209,6 +220,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(357, 154);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(18, 19);
@@ -218,6 +230,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(357, 124);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(18, 19);
@@ -227,6 +240,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(357, 94);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(18, 19);
@@ -236,6 +250,7 @@
             // lblMinSpeed
             // 
             this.lblMinSpeed.AutoSize = true;
+            this.lblMinSpeed.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinSpeed.Location = new System.Drawing.Point(357, 64);
             this.lblMinSpeed.Name = "lblMinSpeed";
             this.lblMinSpeed.Size = new System.Drawing.Size(18, 19);
@@ -254,6 +269,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(272, 184);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(18, 19);
@@ -263,6 +279,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(272, 154);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(18, 19);
@@ -272,6 +289,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(272, 124);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(18, 19);
@@ -281,6 +299,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(272, 94);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(18, 19);
@@ -290,6 +309,7 @@
             // lblAvgSpeed
             // 
             this.lblAvgSpeed.AutoSize = true;
+            this.lblAvgSpeed.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvgSpeed.Location = new System.Drawing.Point(272, 64);
             this.lblAvgSpeed.Name = "lblAvgSpeed";
             this.lblAvgSpeed.Size = new System.Drawing.Size(18, 19);
@@ -308,6 +328,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(187, 184);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(18, 19);
@@ -317,6 +338,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(187, 154);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(18, 19);
@@ -326,6 +348,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(187, 124);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(18, 19);
@@ -335,6 +358,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(187, 94);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(18, 19);
@@ -344,6 +368,7 @@
             // lblMaxSpeed
             // 
             this.lblMaxSpeed.AutoSize = true;
+            this.lblMaxSpeed.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaxSpeed.Location = new System.Drawing.Point(187, 64);
             this.lblMaxSpeed.Name = "lblMaxSpeed";
             this.lblMaxSpeed.Size = new System.Drawing.Size(18, 19);
@@ -411,10 +436,20 @@
             this.gbParameterInfo.Controls.Add(this.label31);
             this.gbParameterInfo.Controls.Add(this.label32);
             this.gbParameterInfo.Controls.Add(this.label33);
+            this.gbParameterInfo.Controls.Add(this.lblWeight);
+            this.gbParameterInfo.Controls.Add(this.lblInterval);
             this.gbParameterInfo.Controls.Add(this.label24);
+            this.gbParameterInfo.Controls.Add(this.lblVO2max);
+            this.gbParameterInfo.Controls.Add(this.lblStartTime);
             this.gbParameterInfo.Controls.Add(this.label25);
+            this.gbParameterInfo.Controls.Add(this.lblRestHR);
+            this.gbParameterInfo.Controls.Add(this.lblDate);
             this.gbParameterInfo.Controls.Add(this.label26);
+            this.gbParameterInfo.Controls.Add(this.lblMaxHR);
+            this.gbParameterInfo.Controls.Add(this.lblSMode);
             this.gbParameterInfo.Controls.Add(this.label27);
+            this.gbParameterInfo.Controls.Add(this.lblLength);
+            this.gbParameterInfo.Controls.Add(this.lblDeviceVersion);
             this.gbParameterInfo.Controls.Add(this.label28);
             this.gbParameterInfo.Controls.Add(this.lblMonitorType);
             this.gbParameterInfo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -597,6 +632,106 @@
             this.Power.Name = "Power";
             this.Power.ReadOnly = true;
             // 
+            // lblDeviceVersion
+            // 
+            this.lblDeviceVersion.AutoSize = true;
+            this.lblDeviceVersion.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeviceVersion.Location = new System.Drawing.Point(145, 52);
+            this.lblDeviceVersion.Name = "lblDeviceVersion";
+            this.lblDeviceVersion.Size = new System.Drawing.Size(18, 19);
+            this.lblDeviceVersion.TabIndex = 5;
+            this.lblDeviceVersion.Text = "0";
+            // 
+            // lblSMode
+            // 
+            this.lblSMode.AutoSize = true;
+            this.lblSMode.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSMode.Location = new System.Drawing.Point(82, 82);
+            this.lblSMode.Name = "lblSMode";
+            this.lblSMode.Size = new System.Drawing.Size(18, 19);
+            this.lblSMode.TabIndex = 4;
+            this.lblSMode.Text = "0";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(67, 112);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(18, 19);
+            this.lblDate.TabIndex = 3;
+            this.lblDate.Text = "0";
+            // 
+            // lblStartTime
+            // 
+            this.lblStartTime.AutoSize = true;
+            this.lblStartTime.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStartTime.Location = new System.Drawing.Point(110, 142);
+            this.lblStartTime.Name = "lblStartTime";
+            this.lblStartTime.Size = new System.Drawing.Size(18, 19);
+            this.lblStartTime.TabIndex = 2;
+            this.lblStartTime.Text = "0";
+            // 
+            // lblInterval
+            // 
+            this.lblInterval.AutoSize = true;
+            this.lblInterval.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInterval.Location = new System.Drawing.Point(90, 172);
+            this.lblInterval.Name = "lblInterval";
+            this.lblInterval.Size = new System.Drawing.Size(18, 19);
+            this.lblInterval.TabIndex = 1;
+            this.lblInterval.Text = "0";
+            // 
+            // lblLength
+            // 
+            this.lblLength.AutoSize = true;
+            this.lblLength.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLength.Location = new System.Drawing.Point(285, 52);
+            this.lblLength.Name = "lblLength";
+            this.lblLength.Size = new System.Drawing.Size(18, 19);
+            this.lblLength.TabIndex = 0;
+            this.lblLength.Text = "0";
+            // 
+            // lblMaxHR
+            // 
+            this.lblMaxHR.AutoSize = true;
+            this.lblMaxHR.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaxHR.Location = new System.Drawing.Point(285, 82);
+            this.lblMaxHR.Name = "lblMaxHR";
+            this.lblMaxHR.Size = new System.Drawing.Size(18, 19);
+            this.lblMaxHR.TabIndex = 4;
+            this.lblMaxHR.Text = "0";
+            // 
+            // lblRestHR
+            // 
+            this.lblRestHR.AutoSize = true;
+            this.lblRestHR.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRestHR.Location = new System.Drawing.Point(285, 112);
+            this.lblRestHR.Name = "lblRestHR";
+            this.lblRestHR.Size = new System.Drawing.Size(18, 19);
+            this.lblRestHR.TabIndex = 3;
+            this.lblRestHR.Text = "0";
+            // 
+            // lblVO2max
+            // 
+            this.lblVO2max.AutoSize = true;
+            this.lblVO2max.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVO2max.Location = new System.Drawing.Point(285, 142);
+            this.lblVO2max.Name = "lblVO2max";
+            this.lblVO2max.Size = new System.Drawing.Size(18, 19);
+            this.lblVO2max.TabIndex = 2;
+            this.lblVO2max.Text = "0";
+            // 
+            // lblWeight
+            // 
+            this.lblWeight.AutoSize = true;
+            this.lblWeight.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeight.Location = new System.Drawing.Point(285, 172);
+            this.lblWeight.Name = "lblWeight";
+            this.lblWeight.Size = new System.Drawing.Size(18, 19);
+            this.lblWeight.TabIndex = 1;
+            this.lblWeight.Text = "0";
+            // 
             // DataSummary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -676,5 +811,15 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label lblWeight;
+        private System.Windows.Forms.Label lblInterval;
+        private System.Windows.Forms.Label lblVO2max;
+        private System.Windows.Forms.Label lblStartTime;
+        private System.Windows.Forms.Label lblRestHR;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblMaxHR;
+        private System.Windows.Forms.Label lblSMode;
+        private System.Windows.Forms.Label lblLength;
+        private System.Windows.Forms.Label lblDeviceVersion;
     }
 }

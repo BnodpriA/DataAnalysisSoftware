@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Text;
 
 namespace DataAnalysisSoftware
 {
@@ -19,35 +21,63 @@ namespace DataAnalysisSoftware
         /// <summary>
         /// Setting Initial Params values
         /// </summary>
-        string version = "Initial Version";
-        string monitor = "Initial Monitor";
-        string sMode = "Initial SMode";
-        string date = "Initial Date";
-        string startTime = "Initial Start Time";
-        string length = "Initial Length";
-        string interval = "Initial Interval";
-        string upper1 = "Initial Upper1";
-        string lower1 = "Initial Lower1";
-        string upper2 = "Initial Upper2";
-        string lower2 = "Initial Lower2";
-        string upper3 = "Initial Upper3";
-        string lower3 = "Initial Lower3";
-        string timer1 = "Initial Timer1";
-        string timer2 = "Initial Timer2";
-        string timer3 = "Initial Timer3";
-        string activeLimit = "Initial Active Limit";
-        string maxHR = "Initial MaxHR";
-        string restHR = "Initial RestHR";
-        string startDelay = "Initial Start Delay";
-        string vo2Max = "Initial VO2Max";
-        string weight = "Initial Weight";
+        string version = "1.0";
+        string monitor = "0";
+        string sMode = "00000000";
+        string date = "20181123";
+        string startTime = "00:00:00.0";
+        string length = "00:00:00.0";
+        string interval = "0";
+        string upper1 = "160";
+        string lower1 = "80";
+        string upper2 = "160";
+        string lower2 = "80";
+        string upper3 = "160";
+        string lower3 = "80";
+        string timer1 = "00:00";
+        string timer2 = "00:00";
+        string timer3 = "00:00";
+        string activeLimit = "0";
+        string maxHR = "192";
+        string restHR = "52";
+        string startDelay = "300";
+        string vo2Max = "50";
+        string weight = "75";
+
+        private string HRM;
+        IDictionary<string, string> Params = new Dictionary<string, string>();
 
         ParameterClass pc = new ParameterClass();
         
         private void DataAnalysisSystemPanel_Load(object sender, EventArgs e)
         {
+            //Setting date formate to YYYY/MM/DD
+            date = date.Insert(4, "/");///Adding foreslash after 4 digit in date
+            date = date.Insert(7, "/");///Adding foreslash after 7 digit in date
+
+
             pc.Version = version;
-            
+            pc.Monitor = monitor;
+            pc.SMode = sMode;
+            pc.Date = date;
+            pc.StartTime = startTime;
+            pc.Length = length;
+            pc.Interval = interval;
+            pc.Upper1 = upper1;
+            pc.Lower1 = lower1;
+            pc.Upper2 = upper2;
+            pc.Lower2 = lower2;
+            pc.Upper3 = upper3;
+            pc.Lower3 = lower3;
+            pc.Timer1 = timer1;
+            pc.Timer2 = timer2;
+            pc.Timer3 = timer3;
+            pc.ActiveLimit = activeLimit;
+            pc.MaxHR = maxHR;
+            pc.RestHR = restHR;
+            pc.StartDelay = startDelay;
+            pc.VO2max = vo2Max;
+            pc.Weight = weight;
         }
         /// <summary>
         /// /Open Dialog to search hrm file
@@ -61,7 +91,11 @@ namespace DataAnalysisSoftware
             opd.Filter = "HRM files (*.hrm|*.hrm|All files (*.*)|*.*";
             if (opd.ShowDialog() == DialogResult.OK)
             {
-
+                txtFileName.Text = opd.FileName;
+            }
+            else
+            {
+                MessageBox.Show("No File Selected");
             }
         }
         /// <summary>
@@ -108,6 +142,28 @@ namespace DataAnalysisSoftware
                 pnlContent.Controls.Add(summary);
                 summary.FormBorderStyle = FormBorderStyle.None;
                 summary.Dock = DockStyle.Fill;
+                summary.version = pc.Version;
+                summary.monitor = pc.Monitor;
+                summary.sMode = pc.SMode;
+                summary.date = pc.Date;
+                summary.startTime = pc.StartTime;
+                summary.length = pc.Length;
+                summary.interval = pc.Interval;
+                summary.upper1 = pc.Upper1;
+                summary.upper2 = pc.Upper2;
+                summary.upper3 = pc.Upper3;
+                summary.lower1 = pc.Lower1;
+                summary.lower2 = pc.Lower2;
+                summary.lower3 = pc.Lower3;
+                summary.timer1 = pc.Timer1;
+                summary.timer2 = pc.Timer2;
+                summary.timer3 = pc.Timer3;
+                summary.activeLimit = pc.ActiveLimit;
+                summary.maxHR = pc.MaxHR;
+                summary.restHR = pc.RestHR;
+                summary.startDelay = pc.StartDelay;
+                summary.vo2Max = pc.VO2max;
+                summary.weight = pc.Weight;
                 summary.Show();
             }
             catch ( Exception ex)
@@ -115,6 +171,38 @@ namespace DataAnalysisSoftware
 
                 MessageBox.Show(ex.Message);
             }
+        }
+        /// <summary>
+        /// Method to load Parameter (Params) of hrm file to InitialParams variables
+        /// </summary>
+        public void LoadParametersToInitialParams()
+        {
+            version = Params["Version"];
+            monitor = Params["Monitor"];
+            sMode = Params["SMode"];
+            date = Params["Date"];
+            startTime = Params["StartTime"];
+            length = Params["Length"];
+            interval = Params["Interval"];
+            upper1 = Params["Upper1"];
+            lower1 = Params["Lower1"];
+            upper2 = Params["Upper2"];
+            lower2 = Params["Lower2"];
+            upper3 = Params["Upper3"];
+            lower3 = Params["Lower3"];
+            timer1 = Params["Timer1"];
+            timer2 = Params["Timer2"];
+            timer3 = Params["Timer3"];
+            activeLimit = Params["ActiveLimit"];
+            maxHR = Params["MaxHR"];
+            restHR = Params["RestHR"];
+            startDelay = Params["StartDelay"];
+            vo2Max = Params["VO2max"];
+            weight = Params["Weight"];
+        }
+        private void FetchData()
+        {
+            StreamReader reader = new StreamReader(txtFileName.Text, Encoding.Default);
         }
     }
 }

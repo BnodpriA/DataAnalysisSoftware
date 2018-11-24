@@ -67,6 +67,7 @@
     <Compile Include="DataSummary.Designer.cs">
       <DependentUpon>DataSummary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delegates.cs" />
     <Compile Include="HRDataClass.cs" />
     <Compile Include="MasterClass.cs" />
     <Compile Include="ParameterClass.cs" />

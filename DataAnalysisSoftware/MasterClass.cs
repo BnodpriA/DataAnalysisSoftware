@@ -16,6 +16,7 @@ namespace DataAnalysisSoftware
         /// </summary>
         /// <param name="monitor"></param>
         /// <returns></returns>
+        public string FileName;
         public static string GetPolarDeviceName(int monitor)
         {
             string deviceName = null;

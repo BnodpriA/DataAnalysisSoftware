@@ -21,6 +21,7 @@ namespace DataAnalysisSoftware
         public string fileName;
         public string deviceName;
         public string version;
+        public string monitor;
         public string sMode;
         public string date;
         public string startTime;
@@ -39,9 +40,27 @@ namespace DataAnalysisSoftware
         public string maxHR;
         public string restHR;
         public string startDelay;
+        public string vo2Max;
+        public string weight;
+
+        ParameterClass pc = new ParameterClass();
+        MasterClass mc = new MasterClass();
         private void DataSummary_Load(object sender, EventArgs e)
         {
+          
             cmbSpeedUnit.SelectedIndex = 0; //Set the initial unit of the speed
+            lblMonitorType.Text = GetPolarDeviceName(Convert.ToInt32(monitor));
+            lblDeviceVersion.Text = version;
+            lblSMode.Text = sMode;
+            lblDate.Text = date;
+            lblStartTime.Text = startTime;
+            lblInterval.Text = interval;
+            lblLength.Text = length;
+            lblMaxHR.Text = maxHR;
+            lblRestHR.Text = restHR;
+            lblVO2max.Text = vo2Max;
+            lblWeight.Text = weight;
+            
         }
         /// <summary>
         /// Load Serial Number
@@ -75,122 +94,122 @@ namespace DataAnalysisSoftware
         /// <returns></returns>
         private static string GetPolarDeviceName(int monitor)
         {
-            string deviceName = null;
+            string deviceName = "HEART RATE MONITOR TYPE";
             switch (monitor)
             {
                 case 1:
                     {
-                        deviceName = "Polar Sport Tester/ Vantage";
+                        deviceName = "POLAR SPORT TESTER/ VANTAGE";
                         break;
                     }
                 case 2:
                     {
-                        deviceName = "Polar Vantage NV (VNV)";
+                        deviceName = "POLAR VANTAGE NV (VNV)";
                         break;
                     }
                 case 3:
                     {
-                        deviceName = "Polar Accurex Plus";
+                        deviceName = "POLAR ACCUREX PlUS";
                         break;
                     }
                 case 4:
                     {
-                        deviceName = "Polar XTrainer Plus";
+                        deviceName = "POLAR XTRAINER PLUS";
                         break;
                     }
                 case 6:
                     {
-                        deviceName = "Polar S520";
+                        deviceName = "POLAR S520";
                         break;
                     }
                 case 7:
                     {
-                        deviceName = "Polar Coach";
+                        deviceName = "POLAR COACH";
                         break;
                     }
                 case 8:
                     {
-                        deviceName = "Polar S210";
+                        deviceName = "POLAR S210";
                         break;
                     }
                 case 9:
                     {
-                        deviceName = "Polar S410";
+                        deviceName = "POLAR S410";
                         break;
                     }
                 case 10:
                     {
-                        deviceName = "Polar S510";
+                        deviceName = "POLAR S510";
                         break;
                     }
                 case 11:
                     {
-                        deviceName = "Polar S610 / S610i";
+                        deviceName = "POLAR S610 / S610I";
                         break;
                     }
                 case 12:
                     {
-                        deviceName = "Polar S710 / S710i / S720i";
+                        deviceName = "POLAR S710 / S710I / S720I";
                         break;
                     }
                 case 13:
                     {
-                        deviceName = "Polar S810 / S810i";
+                        deviceName = "POLAR S810 / S810I";
                         break;
                     }
                 case 15:
                     {
-                        deviceName = "Polar E600";
+                        deviceName = "POLAR E600";
                         break;
                     }
                 case 20:
                     {
-                        deviceName = "Polar AXN500";
+                        deviceName = "POLAR AXN500";
                         break;
                     }
                 case 21:
                     {
-                        deviceName = "Polar AXN700";
+                        deviceName = "POLAR AXN700";
                         break;
                     }
                 case 22:
                     {
-                        deviceName = "Polar S625X / S725X";
+                        deviceName = "POLAR S625X / S725X";
                         break;
                     }
                 case 23:
                     {
-                        deviceName = "Polar S725";
+                        deviceName = "POLAR S725";
                         break;
                     }
                 case 33:
                     {
-                        deviceName = "Polar CS400";
+                        deviceName = "POLAR CS400";
                         break;
                     }
                 case 34:
                     {
-                        deviceName = "Polar CS600X";
+                        deviceName = "POLAR CS600X";
                         break;
                     }
                 case 35:
                     {
-                        deviceName = "Polar CS600";
+                        deviceName = "POLAR CS600";
                         break;
                     }
                 case 36:
                     {
-                        deviceName = "Polar RS400";
+                        deviceName = "POLAR RS400";
                         break;
                     }
                 case 37:
                     {
-                        deviceName = "Polar RS800";
+                        deviceName = "POLAR RS800";
                         break;
                     }
                 case 38:
                     {
-                        deviceName = "Polar RS800X";
+                        deviceName = "POLAR RS800X";
                         break;
                     }
                 default:
