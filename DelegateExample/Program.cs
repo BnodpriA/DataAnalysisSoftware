@@ -11,7 +11,7 @@ namespace DelegateExample
     {
         static void Main(string[] args)
         {
-            ///A delegate is a type safe function pointer
+            ///A delegate is a type safe function pointer 
             HelloFunctionDelegate del = new HelloFunctionDelegate(Hello);
             del("Hello from Delegates");
 

@@ -44,16 +44,23 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="ZedGraph">
-      <HintPath>C:\Users\Bunny\Downloads\Compressed\ZedGraph_Control_Test\ZedGraph_Control_Test\ZedGraph.dll</HintPath>
+    <Reference Include="ZedGraph, Version=1.0.1812.29779, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Bunny\Downloads\Compressed\Cycle\Cycle\bin\Debug\ZedGraph.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChartMode.cs">
+    <Compile Include="AdvanceMetrics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChartMode.Designer.cs">
-      <DependentUpon>ChartMode.cs</DependentUpon>
+    <Compile Include="AdvanceMetrics.Designer.cs">
+      <DependentUpon>AdvanceMetrics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart.Designer.cs">
+      <DependentUpon>Chart.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAnalysisSystemPanel.cs">
       <SubType>Form</SubType>
@@ -68,19 +75,23 @@
       <DependentUpon>DataSummary.cs</DependentUpon>
     </Compile>
     <Compile Include="Delegates.cs" />
+    <Compile Include="FileComparison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileComparison.Designer.cs">
+      <DependentUpon>FileComparison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileHandler.cs" />
     <Compile Include="HRDataClass.cs" />
     <Compile Include="MasterClass.cs" />
     <Compile Include="ParameterClass.cs" />
-    <Compile Include="Summary.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Summary.Designer.cs">
-      <DependentUpon>Summary.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ChartMode.resx">
-      <DependentUpon>ChartMode.cs</DependentUpon>
+    <EmbeddedResource Include="AdvanceMetrics.resx">
+      <DependentUpon>AdvanceMetrics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart.resx">
+      <DependentUpon>Chart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataAnalysisSystemPanel.resx">
       <DependentUpon>DataAnalysisSystemPanel.cs</DependentUpon>
@@ -88,8 +99,8 @@
     <EmbeddedResource Include="DataSummary.resx">
       <DependentUpon>DataSummary.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Summary.resx">
-      <DependentUpon>Summary.cs</DependentUpon>
+    <EmbeddedResource Include="FileComparison.resx">
+      <DependentUpon>FileComparison.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -101,6 +112,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Polar HRM Data Analysis System.docx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +127,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Polar HRM Data Analysis System.docx" />
     <None Include="Resources\Polar.bmp" />
   </ItemGroup>
   <ItemGroup>

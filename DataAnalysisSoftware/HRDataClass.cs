@@ -11,10 +11,10 @@ namespace DataAnalysisSoftware
     public class HRDataClass
     {
         //Data for HRM version 1.06 
-        public int HeartRate { get; set; }
-        public double Speed { get; set; }
-        public int Cadence { get; set; }
-        public int Altitude { get; set; }
+        public int[] HeartRate { get; set; }
+        public double[] Speed { get; set; }
+        public int[] Cadence { get; set; }
+        public int[] Altitude { get; set; }
         public double Power { get; set; }
         public int PowerBalanceAndPedallingIndex { get; set; }
 

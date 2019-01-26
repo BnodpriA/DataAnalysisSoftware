@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using static DataAnalysisSoftware.Delegates;
 
 namespace DataAnalysisSoftware
 {
@@ -16,7 +18,10 @@ namespace DataAnalysisSoftware
         /// </summary>
         /// <param name="monitor"></param>
         /// <returns></returns>
-        public string FileName;
+        /// 
+        public string fileName;
+        private ReadContentsCallBack readContentsCallBack;
+        private ConfigurationLoadedCallBack configLoadCallBack;
         public static string GetPolarDeviceName(int monitor)
         {
             string deviceName = null;
@@ -142,17 +147,54 @@ namespace DataAnalysisSoftware
             }
             return deviceName;
         }
+        public void FileHandler(string fileName, ReadContentsCallBack readContents)
+        {
+            this.fileName = fileName;
+            this.readContentsCallBack = readContents;
+        }
+
+        public void FileHandler(string fileName, ConfigurationLoadedCallBack configLoadBack)
+        {
+            this.fileName = fileName;
+            this.configLoadCallBack = configLoadBack;
+        }
         /// <summary>
         /// Get [Params] from hrm file
         /// </summary>
-        public void GetGeneralParameters()
+        public static void GetGeneralParameters()
         {
+            var config = new Dictionary<string, string>();
+            bool fileExists = File.Exists(""); ///don't forget to assign file path
+            if(!fileExists)
+            {
+                //file doesn't exist, no point is continuing
+                
+                
+            }
+            bool startAppending=false;
+            string line;
+            StreamReader paramsFiles = new StreamReader("");
+            try
+            {
+                while ((line = paramsFiles.ReadLine()) != null)
+                {
+                    if(!startAppending)
+                    {
+                        startAppending = line.Equals("[Params]") ? true : false;
+                        continue;
+                    }
+                }
+            }
+            catch (Exception)
+            {
 
+                throw;
+            }
         }
         /// <summary>
         /// Get [HRData] from hrm file
         /// </summary>
-        public void GetHRMData()
+        public static void GetHRMData()
         {
 
         }

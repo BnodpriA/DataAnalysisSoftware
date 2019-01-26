@@ -39,13 +39,13 @@
             this.lklFacebook = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.txtFileName = new System.Windows.Forms.TextBox();
             this.btnLoadData = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnChart = new System.Windows.Forms.Button();
             this.btnDataSummary = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
-            this.txtFileName = new System.Windows.Forms.TextBox();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -187,6 +187,13 @@
             this.pnlMenu.Size = new System.Drawing.Size(199, 494);
             this.pnlMenu.TabIndex = 2;
             // 
+            // txtFileName
+            // 
+            this.txtFileName.Location = new System.Drawing.Point(3, 104);
+            this.txtFileName.Name = "txtFileName";
+            this.txtFileName.Size = new System.Drawing.Size(191, 26);
+            this.txtFileName.TabIndex = 0;
+            // 
             // btnLoadData
             // 
             this.btnLoadData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -221,6 +228,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Documentation";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnChart
             // 
@@ -256,13 +264,6 @@
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(904, 494);
             this.pnlContent.TabIndex = 0;
-            // 
-            // txtFileName
-            // 
-            this.txtFileName.Location = new System.Drawing.Point(3, 104);
-            this.txtFileName.Name = "txtFileName";
-            this.txtFileName.Size = new System.Drawing.Size(191, 26);
-            this.txtFileName.TabIndex = 0;
             // 
             // DataAnalysisSystemPanel
             // 

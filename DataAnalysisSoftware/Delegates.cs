@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace DataAnalysisSoftware
 {
     /// <summary>
+    /// Delegates are type safe function pointer
     /// Called when the theread finishes loading contents from MasterClass
     /// </summary>
-    class Delegates
+    public class Delegates
     {
-      //  public delegate void ReadCon
+        public delegate void ReadContentsCallBack(List<string[]> results);
+        public delegate void ConfigurationLoadedCallBack(Dictionary<string, string> data);
     }
 }

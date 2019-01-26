@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.pnlDataSummary = new System.Windows.Forms.Panel();
@@ -38,22 +38,22 @@
             this.cmbSpeedUnit = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblMinPower = new System.Windows.Forms.Label();
+            this.lblMinHeartRate = new System.Windows.Forms.Label();
+            this.lblMinAltitude = new System.Windows.Forms.Label();
+            this.lblMinCadence = new System.Windows.Forms.Label();
             this.lblMinSpeed = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblAvgPower = new System.Windows.Forms.Label();
+            this.lblAvgHeartRate = new System.Windows.Forms.Label();
+            this.lblAvgAltitude = new System.Windows.Forms.Label();
+            this.lblAvgCadence = new System.Windows.Forms.Label();
             this.lblAvgSpeed = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblMaxPower = new System.Windows.Forms.Label();
+            this.lblMaxHeartRate = new System.Windows.Forms.Label();
+            this.lblMaxAltitude = new System.Windows.Forms.Label();
+            this.lblMaxCadence = new System.Windows.Forms.Label();
             this.lblMaxSpeed = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -67,29 +67,29 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.lblWeight = new System.Windows.Forms.Label();
+            this.lblInterval = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.lblVO2max = new System.Windows.Forms.Label();
+            this.lblStartTime = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.lblRestHR = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.lblMaxHR = new System.Windows.Forms.Label();
+            this.lblSMode = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.lblLength = new System.Windows.Forms.Label();
+            this.lblDeviceVersion = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.lblMonitorType = new System.Windows.Forms.Label();
             this.dgvHRMData = new System.Windows.Forms.DataGridView();
             this.SNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeartRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Speed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cadence = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Altitude = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HeartRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Power = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblDeviceVersion = new System.Windows.Forms.Label();
-            this.lblSMode = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblStartTime = new System.Windows.Forms.Label();
-            this.lblInterval = new System.Windows.Forms.Label();
-            this.lblLength = new System.Windows.Forms.Label();
-            this.lblMaxHR = new System.Windows.Forms.Label();
-            this.lblRestHR = new System.Windows.Forms.Label();
-            this.lblVO2max = new System.Windows.Forms.Label();
-            this.lblWeight = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlDataSummary.SuspendLayout();
             this.gbDataSummary.SuspendLayout();
@@ -134,22 +134,22 @@
             this.gbDataSummary.Controls.Add(this.cmbSpeedUnit);
             this.gbDataSummary.Controls.Add(this.label22);
             this.gbDataSummary.Controls.Add(this.label21);
-            this.gbDataSummary.Controls.Add(this.label20);
-            this.gbDataSummary.Controls.Add(this.label16);
-            this.gbDataSummary.Controls.Add(this.label12);
-            this.gbDataSummary.Controls.Add(this.label8);
+            this.gbDataSummary.Controls.Add(this.lblMinPower);
+            this.gbDataSummary.Controls.Add(this.lblMinHeartRate);
+            this.gbDataSummary.Controls.Add(this.lblMinAltitude);
+            this.gbDataSummary.Controls.Add(this.lblMinCadence);
             this.gbDataSummary.Controls.Add(this.lblMinSpeed);
             this.gbDataSummary.Controls.Add(this.label4);
-            this.gbDataSummary.Controls.Add(this.label19);
-            this.gbDataSummary.Controls.Add(this.label15);
-            this.gbDataSummary.Controls.Add(this.label11);
-            this.gbDataSummary.Controls.Add(this.label7);
+            this.gbDataSummary.Controls.Add(this.lblAvgPower);
+            this.gbDataSummary.Controls.Add(this.lblAvgHeartRate);
+            this.gbDataSummary.Controls.Add(this.lblAvgAltitude);
+            this.gbDataSummary.Controls.Add(this.lblAvgCadence);
             this.gbDataSummary.Controls.Add(this.lblAvgSpeed);
             this.gbDataSummary.Controls.Add(this.label3);
-            this.gbDataSummary.Controls.Add(this.label18);
-            this.gbDataSummary.Controls.Add(this.label14);
-            this.gbDataSummary.Controls.Add(this.label10);
-            this.gbDataSummary.Controls.Add(this.label6);
+            this.gbDataSummary.Controls.Add(this.lblMaxPower);
+            this.gbDataSummary.Controls.Add(this.lblMaxHeartRate);
+            this.gbDataSummary.Controls.Add(this.lblMaxAltitude);
+            this.gbDataSummary.Controls.Add(this.lblMaxCadence);
             this.gbDataSummary.Controls.Add(this.lblMaxSpeed);
             this.gbDataSummary.Controls.Add(this.label2);
             this.gbDataSummary.Controls.Add(this.label17);
@@ -185,7 +185,8 @@
             this.cmbSpeedUnit.Location = new System.Drawing.Point(73, 60);
             this.cmbSpeedUnit.Name = "cmbSpeedUnit";
             this.cmbSpeedUnit.Size = new System.Drawing.Size(70, 27);
-            this.cmbSpeedUnit.TabIndex = 5;
+            this.cmbSpeedUnit.TabIndex = 1;
+            this.cmbSpeedUnit.SelectedIndexChanged += new System.EventHandler(this.cmbSpeedUnit_SelectedIndexChanged);
             // 
             // label22
             // 
@@ -193,7 +194,7 @@
             this.label22.Location = new System.Drawing.Point(11, 208);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(399, 19);
-            this.label22.TabIndex = 4;
+            this.label22.TabIndex = 8;
             this.label22.Text = "------------------------------------------------------------------------------";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -207,45 +208,45 @@
             this.label21.Text = "------------------------------------------------------------------------------";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label20
+            // lblMinPower
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(357, 184);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(18, 19);
-            this.label20.TabIndex = 3;
-            this.label20.Text = "0";
+            this.lblMinPower.AutoSize = true;
+            this.lblMinPower.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinPower.Location = new System.Drawing.Point(357, 184);
+            this.lblMinPower.Name = "lblMinPower";
+            this.lblMinPower.Size = new System.Drawing.Size(18, 19);
+            this.lblMinPower.TabIndex = 0;
+            this.lblMinPower.Text = "0";
             // 
-            // label16
+            // lblMinHeartRate
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(357, 154);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(18, 19);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "0";
+            this.lblMinHeartRate.AutoSize = true;
+            this.lblMinHeartRate.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinHeartRate.Location = new System.Drawing.Point(357, 154);
+            this.lblMinHeartRate.Name = "lblMinHeartRate";
+            this.lblMinHeartRate.Size = new System.Drawing.Size(18, 19);
+            this.lblMinHeartRate.TabIndex = 0;
+            this.lblMinHeartRate.Text = "0";
             // 
-            // label12
+            // lblMinAltitude
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(357, 124);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(18, 19);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "0";
+            this.lblMinAltitude.AutoSize = true;
+            this.lblMinAltitude.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinAltitude.Location = new System.Drawing.Point(357, 124);
+            this.lblMinAltitude.Name = "lblMinAltitude";
+            this.lblMinAltitude.Size = new System.Drawing.Size(18, 19);
+            this.lblMinAltitude.TabIndex = 0;
+            this.lblMinAltitude.Text = "0";
             // 
-            // label8
+            // lblMinCadence
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(357, 94);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(18, 19);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "0";
+            this.lblMinCadence.AutoSize = true;
+            this.lblMinCadence.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinCadence.Location = new System.Drawing.Point(357, 94);
+            this.lblMinCadence.Name = "lblMinCadence";
+            this.lblMinCadence.Size = new System.Drawing.Size(18, 19);
+            this.lblMinCadence.TabIndex = 0;
+            this.lblMinCadence.Text = "0";
             // 
             // lblMinSpeed
             // 
@@ -254,7 +255,7 @@
             this.lblMinSpeed.Location = new System.Drawing.Point(357, 64);
             this.lblMinSpeed.Name = "lblMinSpeed";
             this.lblMinSpeed.Size = new System.Drawing.Size(18, 19);
-            this.lblMinSpeed.TabIndex = 3;
+            this.lblMinSpeed.TabIndex = 0;
             this.lblMinSpeed.Text = "0";
             // 
             // label4
@@ -263,48 +264,48 @@
             this.label4.Location = new System.Drawing.Point(324, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 19);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Minimum";
             // 
-            // label19
+            // lblAvgPower
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(272, 184);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(18, 19);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "0";
+            this.lblAvgPower.AutoSize = true;
+            this.lblAvgPower.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAvgPower.Location = new System.Drawing.Point(272, 184);
+            this.lblAvgPower.Name = "lblAvgPower";
+            this.lblAvgPower.Size = new System.Drawing.Size(18, 19);
+            this.lblAvgPower.TabIndex = 0;
+            this.lblAvgPower.Text = "0";
             // 
-            // label15
+            // lblAvgHeartRate
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(272, 154);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(18, 19);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "0";
+            this.lblAvgHeartRate.AutoSize = true;
+            this.lblAvgHeartRate.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAvgHeartRate.Location = new System.Drawing.Point(272, 154);
+            this.lblAvgHeartRate.Name = "lblAvgHeartRate";
+            this.lblAvgHeartRate.Size = new System.Drawing.Size(18, 19);
+            this.lblAvgHeartRate.TabIndex = 0;
+            this.lblAvgHeartRate.Text = "0";
             // 
-            // label11
+            // lblAvgAltitude
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(272, 124);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(18, 19);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "0";
+            this.lblAvgAltitude.AutoSize = true;
+            this.lblAvgAltitude.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAvgAltitude.Location = new System.Drawing.Point(272, 124);
+            this.lblAvgAltitude.Name = "lblAvgAltitude";
+            this.lblAvgAltitude.Size = new System.Drawing.Size(18, 19);
+            this.lblAvgAltitude.TabIndex = 0;
+            this.lblAvgAltitude.Text = "0";
             // 
-            // label7
+            // lblAvgCadence
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(272, 94);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(18, 19);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "0";
+            this.lblAvgCadence.AutoSize = true;
+            this.lblAvgCadence.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAvgCadence.Location = new System.Drawing.Point(272, 94);
+            this.lblAvgCadence.Name = "lblAvgCadence";
+            this.lblAvgCadence.Size = new System.Drawing.Size(18, 19);
+            this.lblAvgCadence.TabIndex = 0;
+            this.lblAvgCadence.Text = "0";
             // 
             // lblAvgSpeed
             // 
@@ -313,7 +314,7 @@
             this.lblAvgSpeed.Location = new System.Drawing.Point(272, 64);
             this.lblAvgSpeed.Name = "lblAvgSpeed";
             this.lblAvgSpeed.Size = new System.Drawing.Size(18, 19);
-            this.lblAvgSpeed.TabIndex = 2;
+            this.lblAvgSpeed.TabIndex = 0;
             this.lblAvgSpeed.Text = "0";
             // 
             // label3
@@ -322,48 +323,48 @@
             this.label3.Location = new System.Drawing.Point(248, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 19);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Average";
             // 
-            // label18
+            // lblMaxPower
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(187, 184);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(18, 19);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "0";
+            this.lblMaxPower.AutoSize = true;
+            this.lblMaxPower.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaxPower.Location = new System.Drawing.Point(187, 184);
+            this.lblMaxPower.Name = "lblMaxPower";
+            this.lblMaxPower.Size = new System.Drawing.Size(18, 19);
+            this.lblMaxPower.TabIndex = 0;
+            this.lblMaxPower.Text = "0";
             // 
-            // label14
+            // lblMaxHeartRate
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(187, 154);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(18, 19);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "0";
+            this.lblMaxHeartRate.AutoSize = true;
+            this.lblMaxHeartRate.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaxHeartRate.Location = new System.Drawing.Point(187, 154);
+            this.lblMaxHeartRate.Name = "lblMaxHeartRate";
+            this.lblMaxHeartRate.Size = new System.Drawing.Size(18, 19);
+            this.lblMaxHeartRate.TabIndex = 0;
+            this.lblMaxHeartRate.Text = "0";
             // 
-            // label10
+            // lblMaxAltitude
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(187, 124);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(18, 19);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "0";
+            this.lblMaxAltitude.AutoSize = true;
+            this.lblMaxAltitude.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaxAltitude.Location = new System.Drawing.Point(187, 124);
+            this.lblMaxAltitude.Name = "lblMaxAltitude";
+            this.lblMaxAltitude.Size = new System.Drawing.Size(18, 19);
+            this.lblMaxAltitude.TabIndex = 0;
+            this.lblMaxAltitude.Text = "0";
             // 
-            // label6
+            // lblMaxCadence
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(187, 94);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 19);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "0";
+            this.lblMaxCadence.AutoSize = true;
+            this.lblMaxCadence.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaxCadence.Location = new System.Drawing.Point(187, 94);
+            this.lblMaxCadence.Name = "lblMaxCadence";
+            this.lblMaxCadence.Size = new System.Drawing.Size(18, 19);
+            this.lblMaxCadence.TabIndex = 0;
+            this.lblMaxCadence.Text = "0";
             // 
             // lblMaxSpeed
             // 
@@ -381,7 +382,7 @@
             this.label2.Location = new System.Drawing.Point(155, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 19);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Maximum";
             // 
             // label17
@@ -467,7 +468,7 @@
             this.label29.Location = new System.Drawing.Point(210, 172);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(64, 19);
-            this.label29.TabIndex = 6;
+            this.label29.TabIndex = 0;
             this.label29.Text = "Weight:";
             // 
             // label30
@@ -476,7 +477,7 @@
             this.label30.Location = new System.Drawing.Point(210, 142);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(73, 19);
-            this.label30.TabIndex = 7;
+            this.label30.TabIndex = 0;
             this.label30.Text = "VO2max:";
             // 
             // label31
@@ -485,7 +486,7 @@
             this.label31.Location = new System.Drawing.Point(210, 112);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(72, 19);
-            this.label31.TabIndex = 8;
+            this.label31.TabIndex = 0;
             this.label31.Text = "Rest HR:";
             // 
             // label32
@@ -494,7 +495,7 @@
             this.label32.Location = new System.Drawing.Point(210, 82);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(71, 19);
-            this.label32.TabIndex = 9;
+            this.label32.TabIndex = 0;
             this.label32.Text = "Max HR:";
             // 
             // label33
@@ -503,8 +504,28 @@
             this.label33.Location = new System.Drawing.Point(210, 52);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(64, 19);
-            this.label33.TabIndex = 10;
+            this.label33.TabIndex = 0;
             this.label33.Text = "Length:";
+            // 
+            // lblWeight
+            // 
+            this.lblWeight.AutoSize = true;
+            this.lblWeight.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeight.Location = new System.Drawing.Point(285, 172);
+            this.lblWeight.Name = "lblWeight";
+            this.lblWeight.Size = new System.Drawing.Size(18, 19);
+            this.lblWeight.TabIndex = 0;
+            this.lblWeight.Text = "0";
+            // 
+            // lblInterval
+            // 
+            this.lblInterval.AutoSize = true;
+            this.lblInterval.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInterval.Location = new System.Drawing.Point(90, 172);
+            this.lblInterval.Name = "lblInterval";
+            this.lblInterval.Size = new System.Drawing.Size(18, 19);
+            this.lblInterval.TabIndex = 0;
+            this.lblInterval.Text = "0";
             // 
             // label24
             // 
@@ -512,8 +533,28 @@
             this.label24.Location = new System.Drawing.Point(19, 172);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(72, 19);
-            this.label24.TabIndex = 1;
+            this.label24.TabIndex = 0;
             this.label24.Text = "Interval:";
+            // 
+            // lblVO2max
+            // 
+            this.lblVO2max.AutoSize = true;
+            this.lblVO2max.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVO2max.Location = new System.Drawing.Point(285, 142);
+            this.lblVO2max.Name = "lblVO2max";
+            this.lblVO2max.Size = new System.Drawing.Size(18, 19);
+            this.lblVO2max.TabIndex = 0;
+            this.lblVO2max.Text = "0";
+            // 
+            // lblStartTime
+            // 
+            this.lblStartTime.AutoSize = true;
+            this.lblStartTime.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStartTime.Location = new System.Drawing.Point(110, 142);
+            this.lblStartTime.Name = "lblStartTime";
+            this.lblStartTime.Size = new System.Drawing.Size(18, 19);
+            this.lblStartTime.TabIndex = 0;
+            this.lblStartTime.Text = "0";
             // 
             // label25
             // 
@@ -521,8 +562,28 @@
             this.label25.Location = new System.Drawing.Point(19, 142);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(90, 19);
-            this.label25.TabIndex = 2;
+            this.label25.TabIndex = 0;
             this.label25.Text = "Start Time:";
+            // 
+            // lblRestHR
+            // 
+            this.lblRestHR.AutoSize = true;
+            this.lblRestHR.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRestHR.Location = new System.Drawing.Point(285, 112);
+            this.lblRestHR.Name = "lblRestHR";
+            this.lblRestHR.Size = new System.Drawing.Size(18, 19);
+            this.lblRestHR.TabIndex = 0;
+            this.lblRestHR.Text = "0";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(67, 112);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(18, 19);
+            this.lblDate.TabIndex = 0;
+            this.lblDate.Text = "0";
             // 
             // label26
             // 
@@ -530,8 +591,28 @@
             this.label26.Location = new System.Drawing.Point(19, 112);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(47, 19);
-            this.label26.TabIndex = 3;
+            this.label26.TabIndex = 0;
             this.label26.Text = "Date:";
+            // 
+            // lblMaxHR
+            // 
+            this.lblMaxHR.AutoSize = true;
+            this.lblMaxHR.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaxHR.Location = new System.Drawing.Point(285, 82);
+            this.lblMaxHR.Name = "lblMaxHR";
+            this.lblMaxHR.Size = new System.Drawing.Size(18, 19);
+            this.lblMaxHR.TabIndex = 0;
+            this.lblMaxHR.Text = "0";
+            // 
+            // lblSMode
+            // 
+            this.lblSMode.AutoSize = true;
+            this.lblSMode.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSMode.Location = new System.Drawing.Point(82, 82);
+            this.lblSMode.Name = "lblSMode";
+            this.lblSMode.Size = new System.Drawing.Size(18, 19);
+            this.lblSMode.TabIndex = 0;
+            this.lblSMode.Text = "0";
             // 
             // label27
             // 
@@ -539,8 +620,28 @@
             this.label27.Location = new System.Drawing.Point(19, 82);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(62, 19);
-            this.label27.TabIndex = 4;
+            this.label27.TabIndex = 0;
             this.label27.Text = "SMode:";
+            // 
+            // lblLength
+            // 
+            this.lblLength.AutoSize = true;
+            this.lblLength.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLength.Location = new System.Drawing.Point(285, 52);
+            this.lblLength.Name = "lblLength";
+            this.lblLength.Size = new System.Drawing.Size(18, 19);
+            this.lblLength.TabIndex = 0;
+            this.lblLength.Text = "0";
+            // 
+            // lblDeviceVersion
+            // 
+            this.lblDeviceVersion.AutoSize = true;
+            this.lblDeviceVersion.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeviceVersion.Location = new System.Drawing.Point(145, 52);
+            this.lblDeviceVersion.Name = "lblDeviceVersion";
+            this.lblDeviceVersion.Size = new System.Drawing.Size(18, 19);
+            this.lblDeviceVersion.TabIndex = 0;
+            this.lblDeviceVersion.Text = "0";
             // 
             // label28
             // 
@@ -548,7 +649,7 @@
             this.label28.Location = new System.Drawing.Point(19, 52);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(120, 19);
-            this.label28.TabIndex = 5;
+            this.label28.TabIndex = 0;
             this.label28.Text = "Device Version:";
             // 
             // lblMonitorType
@@ -564,41 +665,48 @@
             // 
             this.dgvHRMData.AllowUserToAddRows = false;
             this.dgvHRMData.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvHRMData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvHRMData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvHRMData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHRMData.BackgroundColor = System.Drawing.Color.White;
             this.dgvHRMData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHRMData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SNo,
+            this.HeartRate,
             this.Speed,
             this.Cadence,
             this.Altitude,
-            this.HeartRate,
             this.Power});
             this.dgvHRMData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvHRMData.Location = new System.Drawing.Point(0, 61);
             this.dgvHRMData.Name = "dgvHRMData";
             this.dgvHRMData.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHRMData.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvHRMData.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvHRMData.RowHeadersVisible = false;
             this.dgvHRMData.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvHRMData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHRMData.Size = new System.Drawing.Size(746, 430);
             this.dgvHRMData.TabIndex = 2;
             // 
             // SNo
             // 
-            this.SNo.FillWeight = 30F;
+            this.SNo.FillWeight = 40F;
             this.SNo.HeaderText = "S.N.";
             this.SNo.Name = "SNo";
             this.SNo.ReadOnly = true;
+            // 
+            // HeartRate
+            // 
+            this.HeartRate.HeaderText = "Heart Rate (bpm)";
+            this.HeartRate.Name = "HeartRate";
+            this.HeartRate.ReadOnly = true;
             // 
             // Speed
             // 
@@ -619,118 +727,12 @@
             this.Altitude.Name = "Altitude";
             this.Altitude.ReadOnly = true;
             // 
-            // HeartRate
-            // 
-            this.HeartRate.HeaderText = "Heart Rate (bpm)";
-            this.HeartRate.Name = "HeartRate";
-            this.HeartRate.ReadOnly = true;
-            // 
             // Power
             // 
             this.Power.FillWeight = 90F;
             this.Power.HeaderText = "Power (watt)";
             this.Power.Name = "Power";
             this.Power.ReadOnly = true;
-            // 
-            // lblDeviceVersion
-            // 
-            this.lblDeviceVersion.AutoSize = true;
-            this.lblDeviceVersion.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeviceVersion.Location = new System.Drawing.Point(145, 52);
-            this.lblDeviceVersion.Name = "lblDeviceVersion";
-            this.lblDeviceVersion.Size = new System.Drawing.Size(18, 19);
-            this.lblDeviceVersion.TabIndex = 5;
-            this.lblDeviceVersion.Text = "0";
-            // 
-            // lblSMode
-            // 
-            this.lblSMode.AutoSize = true;
-            this.lblSMode.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSMode.Location = new System.Drawing.Point(82, 82);
-            this.lblSMode.Name = "lblSMode";
-            this.lblSMode.Size = new System.Drawing.Size(18, 19);
-            this.lblSMode.TabIndex = 4;
-            this.lblSMode.Text = "0";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(67, 112);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(18, 19);
-            this.lblDate.TabIndex = 3;
-            this.lblDate.Text = "0";
-            // 
-            // lblStartTime
-            // 
-            this.lblStartTime.AutoSize = true;
-            this.lblStartTime.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStartTime.Location = new System.Drawing.Point(110, 142);
-            this.lblStartTime.Name = "lblStartTime";
-            this.lblStartTime.Size = new System.Drawing.Size(18, 19);
-            this.lblStartTime.TabIndex = 2;
-            this.lblStartTime.Text = "0";
-            // 
-            // lblInterval
-            // 
-            this.lblInterval.AutoSize = true;
-            this.lblInterval.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInterval.Location = new System.Drawing.Point(90, 172);
-            this.lblInterval.Name = "lblInterval";
-            this.lblInterval.Size = new System.Drawing.Size(18, 19);
-            this.lblInterval.TabIndex = 1;
-            this.lblInterval.Text = "0";
-            // 
-            // lblLength
-            // 
-            this.lblLength.AutoSize = true;
-            this.lblLength.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLength.Location = new System.Drawing.Point(285, 52);
-            this.lblLength.Name = "lblLength";
-            this.lblLength.Size = new System.Drawing.Size(18, 19);
-            this.lblLength.TabIndex = 0;
-            this.lblLength.Text = "0";
-            // 
-            // lblMaxHR
-            // 
-            this.lblMaxHR.AutoSize = true;
-            this.lblMaxHR.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaxHR.Location = new System.Drawing.Point(285, 82);
-            this.lblMaxHR.Name = "lblMaxHR";
-            this.lblMaxHR.Size = new System.Drawing.Size(18, 19);
-            this.lblMaxHR.TabIndex = 4;
-            this.lblMaxHR.Text = "0";
-            // 
-            // lblRestHR
-            // 
-            this.lblRestHR.AutoSize = true;
-            this.lblRestHR.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRestHR.Location = new System.Drawing.Point(285, 112);
-            this.lblRestHR.Name = "lblRestHR";
-            this.lblRestHR.Size = new System.Drawing.Size(18, 19);
-            this.lblRestHR.TabIndex = 3;
-            this.lblRestHR.Text = "0";
-            // 
-            // lblVO2max
-            // 
-            this.lblVO2max.AutoSize = true;
-            this.lblVO2max.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVO2max.Location = new System.Drawing.Point(285, 142);
-            this.lblVO2max.Name = "lblVO2max";
-            this.lblVO2max.Size = new System.Drawing.Size(18, 19);
-            this.lblVO2max.TabIndex = 2;
-            this.lblVO2max.Text = "0";
-            // 
-            // lblWeight
-            // 
-            this.lblWeight.AutoSize = true;
-            this.lblWeight.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWeight.Location = new System.Drawing.Point(285, 172);
-            this.lblWeight.Name = "lblWeight";
-            this.lblWeight.Size = new System.Drawing.Size(18, 19);
-            this.lblWeight.TabIndex = 1;
-            this.lblWeight.Text = "0";
             // 
             // DataSummary
             // 
@@ -766,24 +768,23 @@
         private System.Windows.Forms.GroupBox gbDataSummary;
         private System.Windows.Forms.GroupBox gbParameterInfo;
         private System.Windows.Forms.Label lblMonitorType;
-        private System.Windows.Forms.DataGridView dgvHRMData;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblMinPower;
+        private System.Windows.Forms.Label lblMinHeartRate;
+        private System.Windows.Forms.Label lblMinAltitude;
+        private System.Windows.Forms.Label lblMinCadence;
         private System.Windows.Forms.Label lblMinSpeed;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblAvgPower;
+        private System.Windows.Forms.Label lblAvgHeartRate;
+        private System.Windows.Forms.Label lblAvgAltitude;
+        private System.Windows.Forms.Label lblAvgCadence;
         private System.Windows.Forms.Label lblAvgSpeed;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblMaxPower;
+        private System.Windows.Forms.Label lblMaxHeartRate;
+        private System.Windows.Forms.Label lblMaxAltitude;
+        private System.Windows.Forms.Label lblMaxCadence;
         private System.Windows.Forms.Label lblMaxSpeed;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label17;
@@ -794,12 +795,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox cmbSpeedUnit;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Speed;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cadence;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Altitude;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HeartRate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Power;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
@@ -816,10 +811,17 @@
         private System.Windows.Forms.Label lblVO2max;
         private System.Windows.Forms.Label lblStartTime;
         private System.Windows.Forms.Label lblRestHR;
-        private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblMaxHR;
         private System.Windows.Forms.Label lblSMode;
         private System.Windows.Forms.Label lblLength;
         private System.Windows.Forms.Label lblDeviceVersion;
+        public System.Windows.Forms.Label lblDate;
+        public System.Windows.Forms.DataGridView dgvHRMData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeartRate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Speed;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cadence;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Altitude;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Power;
     }
 }
