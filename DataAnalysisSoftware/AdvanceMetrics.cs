@@ -16,5 +16,10 @@ namespace DataAnalysisSoftware
         {
             InitializeComponent();
         }
+
+        private void AdvanceMetrics_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

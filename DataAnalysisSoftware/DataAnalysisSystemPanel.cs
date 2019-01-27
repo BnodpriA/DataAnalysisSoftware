@@ -49,6 +49,14 @@ namespace DataAnalysisSoftware
         /// </summary>
 
         private string fileName;
+        
+        /// <summary>
+        /// Advance Matrics
+        /// </summary>
+        private static double PowerBalance { get; set; }
+        private static double NormalizedPower { get; set; }
+        private static double TrainingStressScore { get; set; }
+        private static double IntensityFactor { get; set; }
        // string singleLine;
       //  IDictionary<string, string> Params = new Dictionary<string, string>();
 
