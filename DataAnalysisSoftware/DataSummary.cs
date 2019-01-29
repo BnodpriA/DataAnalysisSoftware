@@ -589,5 +589,11 @@ namespace DataAnalysisSoftware
                 MessageBox.Show("No hrm data was found");
             }
         }
+
+        private void dgvHRMData_MouseUp(object sender, MouseEventArgs e)
+        {
+            NoOfChunks frm = new NoOfChunks();
+            frm.ShowDialog();
+        }
     }
 }

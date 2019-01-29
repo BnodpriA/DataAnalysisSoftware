@@ -57,8 +57,19 @@ namespace DataAnalysisSoftware
         private static double NormalizedPower { get; set; }
         private static double TrainingStressScore { get; set; }
         private static double IntensityFactor { get; set; }
-       // string singleLine;
-      //  IDictionary<string, string> Params = new Dictionary<string, string>();
+
+        public static double ftpGlobal { get; set; }
+        public static double ifGlobal { get; set; }
+        public static double tssGlobal { get; set; }
+        public static double avgPowerGlobal { get; set; }
+        public static double normalizationPowerGlobal { get; set; }
+
+        List<double> movAvgPow4 = new List<double>();
+        List<double> movAvg = new List<double>();
+        List<double> movAvgPow4Slt = new List<double>();
+        List<double> movAvgSlt = new List<double>();
+        // string singleLine;
+        //  IDictionary<string, string> Params = new Dictionary<string, string>();
 
         ParameterClass pc = new ParameterClass();
         
@@ -393,6 +404,54 @@ namespace DataAnalysisSoftware
             {
 
                 MessageBox.Show("we can't find the documentation file");
+            }
+        }
+
+        private void btnFileComparison_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                pnlContent.Controls.Clear(); //Clear Existing controls
+
+                SelectDataToCompare frm = new SelectDataToCompare();
+                frm.TopLevel = false;
+                pnlContent.Controls.Add(frm);
+                frm.FormBorderStyle = FormBorderStyle.None;
+                frm.Dock = DockStyle.Fill;
+                frm.Show();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnIntervalDetection_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtFileName.Text == "")
+                {
+                    MessageBox.Show("You need to choose Polar HRM File to view data");
+                    btnLoadData.Focus();
+                }
+                else
+                {
+                    pnlContent.Controls.Clear(); //Clear Existing controls
+                    IntervalDetection frm = new IntervalDetection();
+                    frm.TopLevel = false;
+                    pnlContent.Controls.Add(frm);
+                    frm.FormBorderStyle = FormBorderStyle.None;
+                    frm.Dock = DockStyle.Fill;
+                    frm.Show();
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
         }
     }

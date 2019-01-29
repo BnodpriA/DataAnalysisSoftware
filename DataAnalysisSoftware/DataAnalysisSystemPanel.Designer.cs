@@ -46,6 +46,8 @@
             this.btnChart = new System.Windows.Forms.Button();
             this.btnDataSummary = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.btnFileComparison = new System.Windows.Forms.Button();
+            this.btnIntervalDetection = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -175,6 +177,8 @@
             // pnlMenu
             // 
             this.pnlMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMenu.Controls.Add(this.btnIntervalDetection);
+            this.pnlMenu.Controls.Add(this.btnFileComparison);
             this.pnlMenu.Controls.Add(this.txtFileName);
             this.pnlMenu.Controls.Add(this.btnLoadData);
             this.pnlMenu.Controls.Add(this.btnExit);
@@ -189,7 +193,7 @@
             // 
             // txtFileName
             // 
-            this.txtFileName.Location = new System.Drawing.Point(3, 104);
+            this.txtFileName.Location = new System.Drawing.Point(3, 83);
             this.txtFileName.Name = "txtFileName";
             this.txtFileName.Size = new System.Drawing.Size(191, 26);
             this.txtFileName.TabIndex = 0;
@@ -198,7 +202,7 @@
             // 
             this.btnLoadData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLoadData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoadData.Location = new System.Drawing.Point(3, 134);
+            this.btnLoadData.Location = new System.Drawing.Point(3, 114);
             this.btnLoadData.Name = "btnLoadData";
             this.btnLoadData.Size = new System.Drawing.Size(191, 36);
             this.btnLoadData.TabIndex = 4;
@@ -210,7 +214,7 @@
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(3, 294);
+            this.btnExit.Location = new System.Drawing.Point(3, 360);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(191, 36);
             this.btnExit.TabIndex = 1;
@@ -222,7 +226,7 @@
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(3, 254);
+            this.button3.Location = new System.Drawing.Point(3, 319);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(191, 36);
             this.button3.TabIndex = 2;
@@ -234,7 +238,7 @@
             // 
             this.btnChart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnChart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChart.Location = new System.Drawing.Point(3, 214);
+            this.btnChart.Location = new System.Drawing.Point(3, 196);
             this.btnChart.Name = "btnChart";
             this.btnChart.Size = new System.Drawing.Size(191, 36);
             this.btnChart.TabIndex = 0;
@@ -246,7 +250,7 @@
             // 
             this.btnDataSummary.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDataSummary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataSummary.Location = new System.Drawing.Point(3, 174);
+            this.btnDataSummary.Location = new System.Drawing.Point(3, 155);
             this.btnDataSummary.Name = "btnDataSummary";
             this.btnDataSummary.Size = new System.Drawing.Size(191, 36);
             this.btnDataSummary.TabIndex = 0;
@@ -264,6 +268,30 @@
             this.pnlContent.Name = "pnlContent";
             this.pnlContent.Size = new System.Drawing.Size(904, 494);
             this.pnlContent.TabIndex = 0;
+            // 
+            // btnFileComparison
+            // 
+            this.btnFileComparison.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFileComparison.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFileComparison.Location = new System.Drawing.Point(3, 278);
+            this.btnFileComparison.Name = "btnFileComparison";
+            this.btnFileComparison.Size = new System.Drawing.Size(191, 36);
+            this.btnFileComparison.TabIndex = 5;
+            this.btnFileComparison.Text = "File Comparison";
+            this.btnFileComparison.UseVisualStyleBackColor = true;
+            this.btnFileComparison.Click += new System.EventHandler(this.btnFileComparison_Click);
+            // 
+            // btnIntervalDetection
+            // 
+            this.btnIntervalDetection.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnIntervalDetection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIntervalDetection.Location = new System.Drawing.Point(3, 237);
+            this.btnIntervalDetection.Name = "btnIntervalDetection";
+            this.btnIntervalDetection.Size = new System.Drawing.Size(191, 36);
+            this.btnIntervalDetection.TabIndex = 6;
+            this.btnIntervalDetection.Text = "Interval Detection";
+            this.btnIntervalDetection.UseVisualStyleBackColor = true;
+            this.btnIntervalDetection.Click += new System.EventHandler(this.btnIntervalDetection_Click);
             // 
             // DataAnalysisSystemPanel
             // 
@@ -315,5 +343,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox txtFileName;
+        private System.Windows.Forms.Button btnFileComparison;
+        private System.Windows.Forms.Button btnIntervalDetection;
     }
 }
