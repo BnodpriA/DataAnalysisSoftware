@@ -19,7 +19,11 @@ namespace DataAnalysisSoftware
         }
         string fn1, fn2;
         List<string> filenames = new List<string>();
-
+        /// <summary>
+        /// /Uploading Second File
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnUploadSecondFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -27,7 +31,7 @@ namespace DataAnalysisSoftware
             open.Filter = "hrm|*.hrm|All|*.*";
             if (open.ShowDialog() == DialogResult.OK)
             {
-                fn2 = "File Two = " + open.FileName; // name of the browsed file 
+                fn2 =  open.FileName; // name of the browsed file 
 
             }
             if (fn2.Equals(fn1))
@@ -42,13 +46,21 @@ namespace DataAnalysisSoftware
                 btnCompare.Enabled = true;
             }
         }
-
+        /// <summary>
+        /// Comparing two files
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCompare_Click(object sender, EventArgs e)
         {
             FileComparison frm = new FileComparison(filenames);
             frm.ShowDialog();
         }
-
+        /// <summary>
+        /// Selection of file one
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnFileOne_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -56,7 +68,7 @@ namespace DataAnalysisSoftware
             open.Filter = "hrm|*.hrm|All|*.*";
             if (open.ShowDialog() == DialogResult.OK)
             {
-                fn1 = "File One = " + open.FileName; // name of the browsed file 
+                fn1 = open.FileName; // name of the browsed file 
 
             }
             filenames.Add(fn1);

@@ -28,20 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tbFileComparison = new System.Windows.Forms.TabControl();
             this.tbpComparisionfTwoFiles = new System.Windows.Forms.TabPage();
             this.gbDataOfSecondFile = new System.Windows.Forms.GroupBox();
-            this.dgvHRMDataOfSecondFile = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbAdvanceMetricOfSecondFile = new System.Windows.Forms.GroupBox();
             this.lblTrainiStresf2pm = new System.Windows.Forms.Label();
             this.lblIntensiFacf2pm = new System.Windows.Forms.Label();
@@ -49,7 +38,7 @@
             this.lblNorPowf2pm = new System.Windows.Forms.Label();
             this.lblMovAvgf2pm = new System.Windows.Forms.Label();
             this.lblTrainiStresf2 = new System.Windows.Forms.Label();
-            this.lblIntensiFactf2 = new System.Windows.Forms.Label();
+            this.lblIntensiFacf2 = new System.Windows.Forms.Label();
             this.lblFuncThresf2 = new System.Windows.Forms.Label();
             this.lblNorPowf2 = new System.Windows.Forms.Label();
             this.lblMovAvgf2 = new System.Windows.Forms.Label();
@@ -59,21 +48,14 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.gbDataOfFirstFile = new System.Windows.Forms.GroupBox();
-            this.dgvHRMDataOfFirstFile = new System.Windows.Forms.DataGridView();
-            this.SNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HeartRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Speed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cadence = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Altitude = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Power = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbAdvanceMetricOfFirstFile = new System.Windows.Forms.GroupBox();
             this.lblTrainiStresf1pm = new System.Windows.Forms.Label();
             this.lblIntensiFacf1pm = new System.Windows.Forms.Label();
             this.lblFuncThresf1pm = new System.Windows.Forms.Label();
             this.lblNorPowf1pm = new System.Windows.Forms.Label();
             this.lblMovAvgf1pm = new System.Windows.Forms.Label();
-            this.lblTrainiStressf1 = new System.Windows.Forms.Label();
-            this.lblIntesiFacf1 = new System.Windows.Forms.Label();
+            this.lblTrainiStresf1 = new System.Windows.Forms.Label();
+            this.lblIntensiFacf1 = new System.Windows.Forms.Label();
             this.lblFuncThresf1 = new System.Windows.Forms.Label();
             this.lblNorPowf1 = new System.Windows.Forms.Label();
             this.lblMovAvgf1 = new System.Windows.Forms.Label();
@@ -83,7 +65,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.gbSu = new System.Windows.Forms.GroupBox();
             this.gbSummaryOfFirstFile = new System.Windows.Forms.GroupBox();
             this.maxaf1pm = new System.Windows.Forms.Label();
             this.avgaf1pm = new System.Windows.Forms.Label();
@@ -115,6 +96,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.gbSu = new System.Windows.Forms.GroupBox();
             this.maxaf2pm = new System.Windows.Forms.Label();
             this.avgaf2pm = new System.Windows.Forms.Label();
             this.maxpf2pm = new System.Windows.Forms.Label();
@@ -145,17 +127,37 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
+            this.dgvHRMDataOfFirstFile = new System.Windows.Forms.DataGridView();
+            this.TimeInterval = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeartRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Speeds = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cadences = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AltitudeS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PowerS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PowerBalance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PIS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lrds = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvHRMDataOfSecondFile = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbFileComparison.SuspendLayout();
             this.tbpComparisionfTwoFiles.SuspendLayout();
             this.gbDataOfSecondFile.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHRMDataOfSecondFile)).BeginInit();
             this.gbAdvanceMetricOfSecondFile.SuspendLayout();
             this.gbDataOfFirstFile.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHRMDataOfFirstFile)).BeginInit();
             this.gbAdvanceMetricOfFirstFile.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.gbSu.SuspendLayout();
             this.gbSummaryOfFirstFile.SuspendLayout();
+            this.gbSu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHRMDataOfFirstFile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHRMDataOfSecondFile)).BeginInit();
             this.SuspendLayout();
             // 
             // tbFileComparison
@@ -193,80 +195,6 @@
             this.gbDataOfSecondFile.TabStop = false;
             this.gbDataOfSecondFile.Text = "Data of Second File";
             // 
-            // dgvHRMDataOfSecondFile
-            // 
-            this.dgvHRMDataOfSecondFile.AllowUserToAddRows = false;
-            this.dgvHRMDataOfSecondFile.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvHRMDataOfSecondFile.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvHRMDataOfSecondFile.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvHRMDataOfSecondFile.BackgroundColor = System.Drawing.Color.White;
-            this.dgvHRMDataOfSecondFile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHRMDataOfSecondFile.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.dgvHRMDataOfSecondFile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHRMDataOfSecondFile.Location = new System.Drawing.Point(3, 22);
-            this.dgvHRMDataOfSecondFile.Name = "dgvHRMDataOfSecondFile";
-            this.dgvHRMDataOfSecondFile.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHRMDataOfSecondFile.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvHRMDataOfSecondFile.RowHeadersVisible = false;
-            this.dgvHRMDataOfSecondFile.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvHRMDataOfSecondFile.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHRMDataOfSecondFile.Size = new System.Drawing.Size(597, 296);
-            this.dgvHRMDataOfSecondFile.TabIndex = 6;
-            this.dgvHRMDataOfSecondFile.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dgvHRMDataOfSecondFile_MouseUp);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.FillWeight = 40F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "S.N.";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Heart Rate (bpm)";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.FillWeight = 60F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Speed";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Cadence (rpm)";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Altitude (m/ft)";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.FillWeight = 90F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Power (watt)";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
             // gbAdvanceMetricOfSecondFile
             // 
             this.gbAdvanceMetricOfSecondFile.Controls.Add(this.lblTrainiStresf2pm);
@@ -275,7 +203,7 @@
             this.gbAdvanceMetricOfSecondFile.Controls.Add(this.lblNorPowf2pm);
             this.gbAdvanceMetricOfSecondFile.Controls.Add(this.lblMovAvgf2pm);
             this.gbAdvanceMetricOfSecondFile.Controls.Add(this.lblTrainiStresf2);
-            this.gbAdvanceMetricOfSecondFile.Controls.Add(this.lblIntensiFactf2);
+            this.gbAdvanceMetricOfSecondFile.Controls.Add(this.lblIntensiFacf2);
             this.gbAdvanceMetricOfSecondFile.Controls.Add(this.lblFuncThresf2);
             this.gbAdvanceMetricOfSecondFile.Controls.Add(this.lblNorPowf2);
             this.gbAdvanceMetricOfSecondFile.Controls.Add(this.lblMovAvgf2);
@@ -346,14 +274,14 @@
             this.lblTrainiStresf2.TabIndex = 8;
             this.lblTrainiStresf2.Text = "0.0";
             // 
-            // lblIntensiFactf2
+            // lblIntensiFacf2
             // 
-            this.lblIntensiFactf2.AutoSize = true;
-            this.lblIntensiFactf2.Location = new System.Drawing.Point(371, 89);
-            this.lblIntensiFactf2.Name = "lblIntensiFactf2";
-            this.lblIntensiFactf2.Size = new System.Drawing.Size(30, 19);
-            this.lblIntensiFactf2.TabIndex = 9;
-            this.lblIntensiFactf2.Text = "0.0";
+            this.lblIntensiFacf2.AutoSize = true;
+            this.lblIntensiFacf2.Location = new System.Drawing.Point(371, 89);
+            this.lblIntensiFacf2.Name = "lblIntensiFacf2";
+            this.lblIntensiFacf2.Size = new System.Drawing.Size(30, 19);
+            this.lblIntensiFacf2.TabIndex = 9;
+            this.lblIntensiFacf2.Text = "0.0";
             // 
             // lblFuncThresf2
             // 
@@ -439,80 +367,6 @@
             this.gbDataOfFirstFile.TabStop = false;
             this.gbDataOfFirstFile.Text = "Data of First File";
             // 
-            // dgvHRMDataOfFirstFile
-            // 
-            this.dgvHRMDataOfFirstFile.AllowUserToAddRows = false;
-            this.dgvHRMDataOfFirstFile.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvHRMDataOfFirstFile.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvHRMDataOfFirstFile.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvHRMDataOfFirstFile.BackgroundColor = System.Drawing.Color.White;
-            this.dgvHRMDataOfFirstFile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHRMDataOfFirstFile.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.SNo,
-            this.HeartRate,
-            this.Speed,
-            this.Cadence,
-            this.Altitude,
-            this.Power});
-            this.dgvHRMDataOfFirstFile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvHRMDataOfFirstFile.Location = new System.Drawing.Point(3, 22);
-            this.dgvHRMDataOfFirstFile.Name = "dgvHRMDataOfFirstFile";
-            this.dgvHRMDataOfFirstFile.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvHRMDataOfFirstFile.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvHRMDataOfFirstFile.RowHeadersVisible = false;
-            this.dgvHRMDataOfFirstFile.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvHRMDataOfFirstFile.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHRMDataOfFirstFile.Size = new System.Drawing.Size(539, 296);
-            this.dgvHRMDataOfFirstFile.TabIndex = 5;
-            this.dgvHRMDataOfFirstFile.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dgvHRMDataOfFirstFile_MouseUp);
-            // 
-            // SNo
-            // 
-            this.SNo.FillWeight = 40F;
-            this.SNo.HeaderText = "S.N.";
-            this.SNo.Name = "SNo";
-            this.SNo.ReadOnly = true;
-            // 
-            // HeartRate
-            // 
-            this.HeartRate.HeaderText = "Heart Rate (bpm)";
-            this.HeartRate.Name = "HeartRate";
-            this.HeartRate.ReadOnly = true;
-            // 
-            // Speed
-            // 
-            this.Speed.FillWeight = 60F;
-            this.Speed.HeaderText = "Speed";
-            this.Speed.Name = "Speed";
-            this.Speed.ReadOnly = true;
-            // 
-            // Cadence
-            // 
-            this.Cadence.HeaderText = "Cadence (rpm)";
-            this.Cadence.Name = "Cadence";
-            this.Cadence.ReadOnly = true;
-            // 
-            // Altitude
-            // 
-            this.Altitude.HeaderText = "Altitude (m/ft)";
-            this.Altitude.Name = "Altitude";
-            this.Altitude.ReadOnly = true;
-            // 
-            // Power
-            // 
-            this.Power.FillWeight = 90F;
-            this.Power.HeaderText = "Power (watt)";
-            this.Power.Name = "Power";
-            this.Power.ReadOnly = true;
-            // 
             // gbAdvanceMetricOfFirstFile
             // 
             this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblTrainiStresf1pm);
@@ -520,8 +374,8 @@
             this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblFuncThresf1pm);
             this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblNorPowf1pm);
             this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblMovAvgf1pm);
-            this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblTrainiStressf1);
-            this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblIntesiFacf1);
+            this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblTrainiStresf1);
+            this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblIntensiFacf1);
             this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblFuncThresf1);
             this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblNorPowf1);
             this.gbAdvanceMetricOfFirstFile.Controls.Add(this.lblMovAvgf1);
@@ -583,23 +437,23 @@
             this.lblMovAvgf1pm.TabIndex = 2;
             this.lblMovAvgf1pm.Text = "+/-";
             // 
-            // lblTrainiStressf1
+            // lblTrainiStresf1
             // 
-            this.lblTrainiStressf1.AutoSize = true;
-            this.lblTrainiStressf1.Location = new System.Drawing.Point(324, 107);
-            this.lblTrainiStressf1.Name = "lblTrainiStressf1";
-            this.lblTrainiStressf1.Size = new System.Drawing.Size(30, 19);
-            this.lblTrainiStressf1.TabIndex = 1;
-            this.lblTrainiStressf1.Text = "0.0";
+            this.lblTrainiStresf1.AutoSize = true;
+            this.lblTrainiStresf1.Location = new System.Drawing.Point(324, 107);
+            this.lblTrainiStresf1.Name = "lblTrainiStresf1";
+            this.lblTrainiStresf1.Size = new System.Drawing.Size(30, 19);
+            this.lblTrainiStresf1.TabIndex = 1;
+            this.lblTrainiStresf1.Text = "0.0";
             // 
-            // lblIntesiFacf1
+            // lblIntensiFacf1
             // 
-            this.lblIntesiFacf1.AutoSize = true;
-            this.lblIntesiFacf1.Location = new System.Drawing.Point(324, 88);
-            this.lblIntesiFacf1.Name = "lblIntesiFacf1";
-            this.lblIntesiFacf1.Size = new System.Drawing.Size(30, 19);
-            this.lblIntesiFacf1.TabIndex = 1;
-            this.lblIntesiFacf1.Text = "0.0";
+            this.lblIntensiFacf1.AutoSize = true;
+            this.lblIntensiFacf1.Location = new System.Drawing.Point(324, 88);
+            this.lblIntensiFacf1.Name = "lblIntensiFacf1";
+            this.lblIntensiFacf1.Size = new System.Drawing.Size(30, 19);
+            this.lblIntensiFacf1.TabIndex = 1;
+            this.lblIntensiFacf1.Text = "0.0";
             // 
             // lblFuncThresf1
             // 
@@ -684,46 +538,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Summary";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // gbSu
-            // 
-            this.gbSu.Controls.Add(this.maxaf2pm);
-            this.gbSu.Controls.Add(this.avgaf2pm);
-            this.gbSu.Controls.Add(this.maxpf2pm);
-            this.gbSu.Controls.Add(this.maxhrf2pm);
-            this.gbSu.Controls.Add(this.avgaf2);
-            this.gbSu.Controls.Add(this.avgHeartRatef2pm);
-            this.gbSu.Controls.Add(this.label21);
-            this.gbSu.Controls.Add(this.apf2pm);
-            this.gbSu.Controls.Add(this.apf2);
-            this.gbSu.Controls.Add(this.maxspf2pm);
-            this.gbSu.Controls.Add(this.label22);
-            this.gbSu.Controls.Add(this.minHRf2pm);
-            this.gbSu.Controls.Add(this.maxhrf2);
-            this.gbSu.Controls.Add(this.f2sppm);
-            this.gbSu.Controls.Add(this.label23);
-            this.gbSu.Controls.Add(this.td2pm);
-            this.gbSu.Controls.Add(this.maxspf2);
-            this.gbSu.Controls.Add(this.maxaf2);
-            this.gbSu.Controls.Add(this.td2);
-            this.gbSu.Controls.Add(this.maxpf2);
-            this.gbSu.Controls.Add(this.label24);
-            this.gbSu.Controls.Add(this.minHRf2);
-            this.gbSu.Controls.Add(this.label25);
-            this.gbSu.Controls.Add(this.avgHeartRatef2);
-            this.gbSu.Controls.Add(this.label26);
-            this.gbSu.Controls.Add(this.f2sp);
-            this.gbSu.Controls.Add(this.label27);
-            this.gbSu.Controls.Add(this.label28);
-            this.gbSu.Controls.Add(this.label29);
-            this.gbSu.Controls.Add(this.label30);
-            this.gbSu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gbSu.Location = new System.Drawing.Point(554, 3);
-            this.gbSu.Name = "gbSu";
-            this.gbSu.Size = new System.Drawing.Size(597, 453);
-            this.gbSu.TabIndex = 6;
-            this.gbSu.TabStop = false;
-            this.gbSu.Text = "Summary of Second File";
             // 
             // gbSummaryOfFirstFile
             // 
@@ -1075,6 +889,46 @@
             this.label15.TabIndex = 9;
             this.label15.Text = "Total Distance Covered";
             // 
+            // gbSu
+            // 
+            this.gbSu.Controls.Add(this.maxaf2pm);
+            this.gbSu.Controls.Add(this.avgaf2pm);
+            this.gbSu.Controls.Add(this.maxpf2pm);
+            this.gbSu.Controls.Add(this.maxhrf2pm);
+            this.gbSu.Controls.Add(this.avgaf2);
+            this.gbSu.Controls.Add(this.avgHeartRatef2pm);
+            this.gbSu.Controls.Add(this.label21);
+            this.gbSu.Controls.Add(this.apf2pm);
+            this.gbSu.Controls.Add(this.apf2);
+            this.gbSu.Controls.Add(this.maxspf2pm);
+            this.gbSu.Controls.Add(this.label22);
+            this.gbSu.Controls.Add(this.minHRf2pm);
+            this.gbSu.Controls.Add(this.maxhrf2);
+            this.gbSu.Controls.Add(this.f2sppm);
+            this.gbSu.Controls.Add(this.label23);
+            this.gbSu.Controls.Add(this.td2pm);
+            this.gbSu.Controls.Add(this.maxspf2);
+            this.gbSu.Controls.Add(this.maxaf2);
+            this.gbSu.Controls.Add(this.td2);
+            this.gbSu.Controls.Add(this.maxpf2);
+            this.gbSu.Controls.Add(this.label24);
+            this.gbSu.Controls.Add(this.minHRf2);
+            this.gbSu.Controls.Add(this.label25);
+            this.gbSu.Controls.Add(this.avgHeartRatef2);
+            this.gbSu.Controls.Add(this.label26);
+            this.gbSu.Controls.Add(this.f2sp);
+            this.gbSu.Controls.Add(this.label27);
+            this.gbSu.Controls.Add(this.label28);
+            this.gbSu.Controls.Add(this.label29);
+            this.gbSu.Controls.Add(this.label30);
+            this.gbSu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.gbSu.Location = new System.Drawing.Point(554, 3);
+            this.gbSu.Name = "gbSu";
+            this.gbSu.Size = new System.Drawing.Size(597, 453);
+            this.gbSu.TabIndex = 6;
+            this.gbSu.TabStop = false;
+            this.gbSu.Text = "Summary of Second File";
+            // 
             // maxaf2pm
             // 
             this.maxaf2pm.AutoSize = true;
@@ -1385,6 +1239,138 @@
             this.label30.TabIndex = 17;
             this.label30.Text = "Maximum Speed";
             // 
+            // dgvHRMDataOfFirstFile
+            // 
+            this.dgvHRMDataOfFirstFile.BackgroundColor = System.Drawing.Color.White;
+            this.dgvHRMDataOfFirstFile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHRMDataOfFirstFile.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.TimeInterval,
+            this.HeartRate,
+            this.Speeds,
+            this.cadences,
+            this.AltitudeS,
+            this.PowerS,
+            this.PowerBalance,
+            this.PIS,
+            this.lrds});
+            this.dgvHRMDataOfFirstFile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvHRMDataOfFirstFile.Location = new System.Drawing.Point(3, 22);
+            this.dgvHRMDataOfFirstFile.Name = "dgvHRMDataOfFirstFile";
+            this.dgvHRMDataOfFirstFile.Size = new System.Drawing.Size(539, 296);
+            this.dgvHRMDataOfFirstFile.TabIndex = 5;
+            this.dgvHRMDataOfFirstFile.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dgvHRMDataOfFirstFile_MouseUp);
+            // 
+            // TimeInterval
+            // 
+            this.TimeInterval.HeaderText = "TimeInterval";
+            this.TimeInterval.Name = "TimeInterval";
+            // 
+            // HeartRate
+            // 
+            this.HeartRate.HeaderText = "HeartRate";
+            this.HeartRate.Name = "HeartRate";
+            // 
+            // Speeds
+            // 
+            this.Speeds.HeaderText = "Speed";
+            this.Speeds.Name = "Speeds";
+            // 
+            // cadences
+            // 
+            this.cadences.HeaderText = "Cadence";
+            this.cadences.Name = "cadences";
+            // 
+            // AltitudeS
+            // 
+            this.AltitudeS.HeaderText = "Altitude";
+            this.AltitudeS.Name = "AltitudeS";
+            // 
+            // PowerS
+            // 
+            this.PowerS.HeaderText = "Power(Watt)";
+            this.PowerS.Name = "PowerS";
+            // 
+            // PowerBalance
+            // 
+            this.PowerBalance.HeaderText = "PowerBalance";
+            this.PowerBalance.Name = "PowerBalance";
+            // 
+            // PIS
+            // 
+            this.PIS.HeaderText = "Pedalling Index";
+            this.PIS.Name = "PIS";
+            // 
+            // lrds
+            // 
+            this.lrds.HeaderText = "Left Right Balance";
+            this.lrds.Name = "lrds";
+            // 
+            // dgvHRMDataOfSecondFile
+            // 
+            this.dgvHRMDataOfSecondFile.BackgroundColor = System.Drawing.Color.White;
+            this.dgvHRMDataOfSecondFile.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHRMDataOfSecondFile.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.dgvHRMDataOfSecondFile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvHRMDataOfSecondFile.Location = new System.Drawing.Point(3, 22);
+            this.dgvHRMDataOfSecondFile.Name = "dgvHRMDataOfSecondFile";
+            this.dgvHRMDataOfSecondFile.Size = new System.Drawing.Size(597, 296);
+            this.dgvHRMDataOfSecondFile.TabIndex = 6;
+            this.dgvHRMDataOfSecondFile.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dgvHRMDataOfSecondFile_MouseUp);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "TimeInterval";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "HeartRate";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Speed";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Cadence";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Altitude";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Power(Watt)";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "PowerBalance";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Pedalling Index";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Left Right Balance";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
             // FileComparison
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -1400,18 +1386,18 @@
             this.tbFileComparison.ResumeLayout(false);
             this.tbpComparisionfTwoFiles.ResumeLayout(false);
             this.gbDataOfSecondFile.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHRMDataOfSecondFile)).EndInit();
             this.gbAdvanceMetricOfSecondFile.ResumeLayout(false);
             this.gbAdvanceMetricOfSecondFile.PerformLayout();
             this.gbDataOfFirstFile.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvHRMDataOfFirstFile)).EndInit();
             this.gbAdvanceMetricOfFirstFile.ResumeLayout(false);
             this.gbAdvanceMetricOfFirstFile.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.gbSu.ResumeLayout(false);
-            this.gbSu.PerformLayout();
             this.gbSummaryOfFirstFile.ResumeLayout(false);
             this.gbSummaryOfFirstFile.PerformLayout();
+            this.gbSu.ResumeLayout(false);
+            this.gbSu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHRMDataOfFirstFile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHRMDataOfSecondFile)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1425,27 +1411,13 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox gbAdvanceMetricOfSecondFile;
         private System.Windows.Forms.GroupBox gbAdvanceMetricOfFirstFile;
-        public System.Windows.Forms.DataGridView dgvHRMDataOfSecondFile;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        public System.Windows.Forms.DataGridView dgvHRMDataOfFirstFile;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HeartRate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Speed;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cadence;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Altitude;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Power;
         private System.Windows.Forms.Label lblTrainiStresf1pm;
         private System.Windows.Forms.Label lblIntensiFacf1pm;
         private System.Windows.Forms.Label lblFuncThresf1pm;
         private System.Windows.Forms.Label lblNorPowf1pm;
         private System.Windows.Forms.Label lblMovAvgf1pm;
-        private System.Windows.Forms.Label lblTrainiStressf1;
-        private System.Windows.Forms.Label lblIntesiFacf1;
+        private System.Windows.Forms.Label lblTrainiStresf1;
+        private System.Windows.Forms.Label lblIntensiFacf1;
         private System.Windows.Forms.Label lblFuncThresf1;
         private System.Windows.Forms.Label lblNorPowf1;
         private System.Windows.Forms.Label lblMovAvgf1;
@@ -1460,7 +1432,7 @@
         private System.Windows.Forms.Label lblNorPowf2pm;
         private System.Windows.Forms.Label lblMovAvgf2pm;
         private System.Windows.Forms.Label lblTrainiStresf2;
-        private System.Windows.Forms.Label lblIntensiFactf2;
+        private System.Windows.Forms.Label lblIntensiFacf2;
         private System.Windows.Forms.Label lblFuncThresf2;
         private System.Windows.Forms.Label lblNorPowf2;
         private System.Windows.Forms.Label lblMovAvgf2;
@@ -1531,5 +1503,25 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.DataGridView dgvHRMDataOfSecondFile;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridView dgvHRMDataOfFirstFile;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeInterval;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeartRate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Speeds;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cadences;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AltitudeS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PowerS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PowerBalance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PIS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lrds;
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbNoOfChunks = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,19 +43,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "SELECT NUMBER OF CHUNKS\r\nYOU WANTED TO SPLIT THE\r\nSELECTED DATA";
             // 
-            // comboBox1
+            // cmbNoOfChunks
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbNoOfChunks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNoOfChunks.FormattingEnabled = true;
+            this.cmbNoOfChunks.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4"});
-            this.comboBox1.Location = new System.Drawing.Point(211, 97);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(98, 27);
-            this.comboBox1.TabIndex = 1;
+            this.cmbNoOfChunks.Location = new System.Drawing.Point(211, 97);
+            this.cmbNoOfChunks.Name = "cmbNoOfChunks";
+            this.cmbNoOfChunks.Size = new System.Drawing.Size(98, 27);
+            this.cmbNoOfChunks.TabIndex = 1;
+            this.cmbNoOfChunks.SelectedIndexChanged += new System.EventHandler(this.cmbNoOfChunks_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -85,13 +86,14 @@
             this.ClientSize = new System.Drawing.Size(421, 231);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbNoOfChunks);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NoOfChunks";
             this.Text = "NoOfChunks";
+            this.Load += new System.EventHandler(this.NoOfChunks_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,7 +103,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox cmbNoOfChunks;
         private System.Windows.Forms.Button btnOK;
     }
 }

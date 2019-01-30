@@ -31,15 +31,28 @@ namespace DataAnalysisSoftware
 
         private void IntervalDetection_Load(object sender, EventArgs e)
         {
-            int v = 0;
             try
             {
-                lblThresholdPower.Text=OpenFileDialog.inte
+                lblThresholdPower.Text = DataAnalysisSystemPanel.threholdValueGlobal.ToString();
+                for (int i = 0; i < DataAnalysisSystemPanel.intervalDetectionData.Count(); i++)
+                {
+                    dgvIntervalInformation.ClearSelection();
+                    dgvIntervalInformation.Rows.Add();
+                    dgvIntervalInformation.Rows[i].Cells[1].Value = "Interval " + DataAnalysisSystemPanel.intervalDetectionData[i];
+                    dgvIntervalInformation.Rows[i].Cells[2].Value = DataAnalysisSystemPanel.powerInterval[i];
+                }
+
+                for (int j = 0; j <=DataAnalysisSystemPanel.intervalDetectionData.Last(); j++)
+                {
+                    lbIntervals.Items.Add("Interval " + j);
+                }
+                DetectInterval();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message);
+
             }
         }
     }

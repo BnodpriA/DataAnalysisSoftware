@@ -49,10 +49,17 @@ namespace DataAnalysisSoftware
         /// </summary>
 
         private string fileName;
-        
+
         /// <summary>
         /// Advance Matrics
         /// </summary>
+        public static List<List<double>> intervalValues = new List<List<double>>();
+        public static List<double> powerData = new List<double>(); // used in interval detection as well 
+        public static List<double> intervalDetectionData = new List<double>(); // interval detection 
+        public static List<double> powerInterval = new List<double>(); // interval detection 
+        public static double threholdValueGlobal;  // interval detection 
+        List<double> powerDataSlt = new List<double>();
+
         private static double PowerBalance { get; set; }
         private static double NormalizedPower { get; set; }
         private static double TrainingStressScore { get; set; }
@@ -454,5 +461,85 @@ namespace DataAnalysisSoftware
                 MessageBox.Show(ex.Message);
             }
         }
+        /// <summary>
+        /// Interval Detection
+        /// </summary>
+        public void IntervalDetection()
+        {
+            double ThresholdPower = Math.Round((105 * ftpGlobal) / 100, 2);
+            int powerDown = 1;
+            int powerUp = 1;
+            double intervalValue = 0;
+            try
+            {
+                foreach (double powerDataValue in powerData)
+                {
+                    if (ThresholdPower >= powerDataValue)
+                    {
+                        powerDown = 1;
+                    }
+                    if (powerDown == 1)
+                    {
+                        if (ThresholdPower<=powerDataValue)
+                        {
+                            powerUp = 1;
+                        }
+                    }
+                    if (powerUp==1)
+                    {
+                        intervalValue++;
+                        powerUp = 0;
+                        powerDown = 0;
+                    }
+                    intervalDetectionData.Add(intervalValue);
+                    powerInterval.Add(powerDataValue);
+                    threholdValueGlobal = ThresholdPower;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void intervalDetectionSlt()
+        {
+            double thresholdPower = Math.Round((105 * ftpGlobal) / 100, 2);
+            int powerDown = 1;
+            int powerUp = 1;
+            double intervalValue = 0;
+            try
+            {
+                foreach(double powerDataV in powerData)
+                {
+                    if (thresholdPower>=powerDataV)
+                    {
+                        powerDown = 1;
+                    }
+                    if (powerDown==1)
+                    {
+                        if (thresholdPower <= powerDataV)
+                            powerUp = 1;
+                    }
+                    if (powerUp == 1)
+                    {
+                        intervalValue++;
+                        powerUp = 0;
+                        powerDown = 0;
+                    }
+                    intervalDetectionData.Add(intervalValue);
+                    powerInterval.Add(powerDataV);
+                    threholdValueGlobal = thresholdPower;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+        
+       
+            
     }
 }

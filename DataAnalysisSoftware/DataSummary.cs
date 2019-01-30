@@ -589,11 +589,84 @@ namespace DataAnalysisSoftware
                 MessageBox.Show("No hrm data was found");
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void dgvHRMData_MouseUp(object sender, MouseEventArgs e)
         {
+            try
+            {
+
+                DataGridViewSelection();
+                int chunkDivision = 1;
+                using (var form = new NoOfChunks())
+                {
+                    var result = form.ShowDialog();
+                    if (result==DialogResult.OK)
+                    {
+                        chunkDivision = form.chunkGet;
+                    }
+                }
+                //count the selected rows from the datagridview
+                int gridCount = dgvHRMData.SelectedRows.Count;
+
+                //store the counted data in array variables
+                // variable declarations
+                double[] heartRates = new double[gridCount];
+                double[] speeds = new double[gridCount];
+                double[] cadences = new double[gridCount];
+                double[] altitudes = new double[gridCount];
+                double[] powers = new double[gridCount];
+
+                int i = 0;
+                ///
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
             NoOfChunks frm = new NoOfChunks();
             frm.ShowDialog();
+        }
+        
+        public void DataGridViewSelection()
+        {
+            //for counting selected rows
+            int gridCount = dgvHRMData.SelectedRows.Count;
+
+            //declaration of datas as array
+            double[] heartRates = new double[gridCount];
+            double[] speeds = new double[gridCount];
+            double[] cadences = new double[gridCount];
+            double[] altitudes = new double[gridCount];
+            double[] powers = new double[gridCount];
+
+            int i = 0;
+            try
+            {
+                //stores all the selected data in the respective arrays
+                foreach  (DataGridViewRow  row in dgvHRMData.Rows)
+                {
+                    heartRates[i] = Convert.ToDouble(row.Cells[1].Value);
+                    speeds[i] = Convert.ToDouble(row.Cells[2].Value);
+                    cadences[i] = Convert.ToDouble(row.Cells[3].Value);
+                    altitudes[i] = Convert.ToDouble(row.Cells[4].Value);
+                    powers[i] = Convert.ToDouble(row.Cells[5].Value);
+
+                    i++;
+                    
+                }
+                //graph data fetch to global
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
