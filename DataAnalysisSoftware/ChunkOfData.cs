@@ -44,7 +44,9 @@ namespace DataAnalysisSoftware
             this.chunkNumber = chunkNumber;
             ChunkDivision = count / chunkNumber;
         }
-
+        /// <summary>
+        /// summary of chunk data
+        /// </summary>
         public void chunkSectionsSummary()
         {
             // int chunkValue = new ChunkData().sendChunkValue();
@@ -86,6 +88,15 @@ namespace DataAnalysisSoftware
             }
 
         }
+        /// <summary>
+        /// calcuting chunk data
+        /// </summary>
+        /// <param name="chunkNo"></param>
+        /// <param name="hr"></param>
+        /// <param name="sp"></param>
+        /// <param name="cd"></param>
+        /// <param name="al"></param>
+        /// <param name="po"></param>
         private void calculateData(int chunkNo, double[] hr, double[] sp, double[] cd, double[] al, double[] po)
         {
             //put logic here for km/miles
